@@ -1,20 +1,9 @@
-<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" fill="none" height="96" viewBox="0 0 72 96" width="72">
-<clipPath id="a">
-<path d="m0 0h72v96h-72z"/>
-</clipPath><clipPath id="b">
-<path d="m0 0h72v96h-72z"/>
-</clipPath><clipPath id="c">
-<path d="m12 36h48v48h-48z"/>
-</clipPath><g clip-path="url(#a)">
-<g clip-path="url(#c)" fill="#5865f2">
-
-<path d="
+<svg xmlns="http://www.w3.org/2000/svg" width="72" height="96" viewBox="0 0 72 96">
+<path fill="black" fill-rule="evenodd" clip-rule="evenodd" d="
 m24 56
 c4.4183 0 8-3.5817 8-8
 s-3.5817-8-8-8-8 3.5817-8 8 3.5817 8 8 8z"/>
-
-<path d="
+  
+<path fill="black" fill-rule="evenodd" clip-rule="evenodd" d="
 m44 55.998-10.352 15.528-5.648-7.528-12 16h40z"/>
-</g>
-</g>
 </svg>
