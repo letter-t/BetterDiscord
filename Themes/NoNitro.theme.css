@@ -1,0 +1,66 @@
+//META{"name":"NoNitro","description":"Absolutely none, not now, not ever. no.   --   Released 2023-3-11 (Y-M-D)","author":"t឵឵឵#9679","version":"1.0.0"}*//
+
+.premiumTab-39eQzY,
+div.side-1lrxIh > :nth-child(n+12):nth-child(-n+14),
+.tryItOutSection-W9qeGH,
+.newBackgroundTooltipContainer-1wPn60,
+.upsellOverlayContainer-3NMgTS,
+.upsellOverlay-3sCO8V,
+.guildBoostCtas-1Hpxij,
+.topPerksCards-3ABdOB,
+.backgroundImages-3Mbm2C,
+.tierCards-1cjGnx,
+.middleBodyContentWrapper-2zw83x,
+.wrapper-1QJfyI,
+.wrapper-3uUnvs,
+.wrapper-1ReDXd,
+.heading-aLpJap,
+.lowerBodyBackgroundImage-Rt__JW,
+.container-BZUZfa[data-cy="tier-0-marketing-page"] div, 
+.effectsWrapper-1M6qbb,
+.avatarDecoration-34OC0G {
+    visibility: hidden !important;
+	display: none !important;
+}
+
+.header-16U6Vf {
+    background-image: none;
+}
+
+
+.container-BZUZfa[data-cy="tier-0-marketing-page"]::before {
+    content: "";
+    max-width: 640px;
+    max-height: 606px;
+    aspect-ratio: 640/606;
+    width: 100%;
+    height: 100%;
+    display: block;
+    background: url("https://cdn.discordapp.com/attachments/1036084227080462366/1084269399302754404/discord_nitro.gif") no-repeat;
+    background-size: cover;
+}
+
+/*.profileBadges-31rDHI {
+    z-index: 0;
+}
+
+.profileBadges-31rDHI::before {
+    background-color: #ff00ff00;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    content: "";
+    display: block;
+    z-index: 10;
+}*/
+
+.effectsWrapper-1M6qbb {
+    animation: none !important;
+}
+
+.effectsWrapper-1M6qbb {
+    display: none !important;
+}
