@@ -1,0 +1,8 @@
+//META{"name":"RevertNewFont","description":"Reverts the new discord font   --   Released 2022-12-02 (Y-M-D)","author":"t឵឵឵#9679","version":"1.0.0"}*//
+
+@import url('https://fonts.cdnfonts.com/css/whitney-2');
+:root {
+    --font-primary: "Whitney Book","Noto Sans","Helvetica Neue",Helvetica,Arial,sans-serif;
+    --font-display: "Whitney Book","Noto Sans","Helvetica Neue",Helvetica,Arial,sans-serif;
+    --font-headline: "ABC Ginto Nord","Noto Sans","Helvetica Neue",Helvetica,Arial,sans-serif;
+}
