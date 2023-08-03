@@ -18,9 +18,10 @@ div.side-1lrxIh > :nth-child(n+12):nth-child(-n+14),
 .lowerBodyBackgroundImage-Rt__JW,
 .container-BZUZfa[data-cy="tier-0-marketing-page"] div, 
 .effectsWrapper-1M6qbb,
-.avatarDecoration-34OC0G {
+.avatarDecoration-34OC0G,
+.webkit-QgSAqd .buttons-uaqb-5 > .button-f2h6uQ {
     visibility: hidden !important;
-	display: none !important;
+    display: none !important;
 }
 
 .header-16U6Vf {
