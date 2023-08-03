@@ -772,12 +772,6 @@ div.channel.channel-voice.audio
 	padding: 1px 6px;
 }
 
-#user-context > div > div:nth-child(3) > div:nth-child(1)
-{
-	visibility: hidden !important;
-	display: none !important;
-}
-
 .friendsTable-133bsv 
 {
 	margin-top: 0px;
