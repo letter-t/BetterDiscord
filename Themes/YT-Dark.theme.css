@@ -331,7 +331,7 @@ body,
 	background-color: #337959;
 }
 
-.mentioned-xhSam7:before 
+.mentioned__58017:before 
 {
 	background-color: #fa1a1a
 }
@@ -692,19 +692,20 @@ div.channel.channel-voice.audio
 	border-left: 1px solid #cece17;
 }
 
-.replying-eZ7p5z
+.replying_d7b6ad
 {
         box-shadow: inset 0px 0px 0px 1px #651717;
 	background-color: rgba(80,39,39,0.2);
 }
-.replying-eZ7p5z:hover
+.replying_d7b6ad:hover
 {
 	background-color: rgba(60,39,39,0.2) !important;
 }
 
 .wrapper-3WhCwL,
 .theme-dark .wrapper-1ZcZW-,
-.theme-light .wrapper-1ZcZW-
+.theme-light .wrapper-1ZcZW-,
+.wrapper_f46140
 {
 	color: #ce1313;
 	background-color: rgba(193, 33, 33, 0.14);
