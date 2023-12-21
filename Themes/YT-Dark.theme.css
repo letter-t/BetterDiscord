@@ -618,7 +618,7 @@ div.channel.channel-voice.audio
 .modeUnreadImportant_efb53e > div > .link__95dc0
 {
 	background: linear-gradient(to right,#212121 85%,#1a1a1a);
-	--borderWidth: 1.4px;
+	--borderWidth: 1.3px;
 	padding-top: calc(6px - var(--borderWidth));
 	padding-bottom: calc(6px - var(--borderWidth));
 	padding-left: calc(8px - var(--borderWidth));
