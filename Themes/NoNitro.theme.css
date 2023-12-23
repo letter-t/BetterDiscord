@@ -1,67 +1,62 @@
-//META{"name":"NoNitro","description":"Absolutely none, not now, not ever. no.   --   Released 2023-3-11 (Y-M-D)","author":"t឵឵឵#9679","version":"1.0.0"}*//
+//META{"name":"NoNitro","description":"For those who will never buy nitro   --   Released 2023-3-11 (Y-M-D)","author":"t឵឵឵#9679","version":"1.0.0"}*//
 
-.premiumTab-39eQzY,
-div.side-1lrxIh > :nth-child(n+12):nth-child(-n+14),
-.tryItOutSection-W9qeGH,
-.newBackgroundTooltipContainer-1wPn60,
-.upsellOverlayContainer-3NMgTS,
-.upsellOverlay-3sCO8V,
-.guildBoostCtas-1Hpxij,
-.topPerksCards-3ABdOB,
-.backgroundImages-3Mbm2C,
-.tierCards-1cjGnx,
-.middleBodyContentWrapper-2zw83x,
-.wrapper-1QJfyI,
-.wrapper-3uUnvs,
-.wrapper-1ReDXd,
-.heading-aLpJap,
-.lowerBodyBackgroundImage-Rt__JW,
-.container-BZUZfa[data-cy="tier-0-marketing-page"] div, 
-.effectsWrapper-1M6qbb,
-.avatarDecoration-34OC0G,
-.webkit-QgSAqd .buttons-uaqb-5 > .button-f2h6uQ {
-    visibility: hidden !important;
-    display: none !important;
+/*
+NO NITRO THEME
+by t
+
+ This theme is NOT perfect, and I was lazy with quite a few parts 
+  (you will see the horizontal division lines above sections where nitro stuff used to be)
+ I just don't want to see any of their obnoxious shilling
+
+ Also, I got rid of the big profile effects that covered the entire profile,
+ as well as the super emoji animations and the pfp overlay animations (you're welcome)
+
+ IF YOU ENCOUNTER ANY ISSUES, OR IF DISCORD "UPDATES" THEIR UI FOR AT LEAST THE 302ND TIME, 
+ PLEASE CONTACT ME BY DISCORD OR EMAIL FOR A FIXED/UPDATED VERSION.
+
+ Discord: letter_t
+ Email: tosiq25@gmail.com
+*/
+
+.tryItOutSection__0f9fb,
+div.side_b4b3f6 > :nth-child(n+12):nth-child(-n+18),
+.container__74da1[data-cy="tier-0-marketing-page"] div, 
+.premiumFeatureBorder__9bbb3,
+.shinyButton_fc8363,
+.disabled__30880:not(.selected__603be),
+.presets_c3a603 > :nth-child(n+2),
+.newBackgroundTooltipContainer_ab64e1,
+.upsellOverlay__688e8,
+.upsellOverlayContainer__08979,
+.containerDefaultMargin_dcee92,
+.avatarDecoration__14b3c,
+.avatarDecoration_ae35e3,
+.profileEffects_fd33f6,
+.effectsWrapper__9fe42,
+.burstReactionTooltipPrompt__069e3
+{
+	visibility: hidden !important;
+	display: none !important;
 }
 
-.header-16U6Vf {
-    background-image: none;
+.header__4f442 
+{
+	background-image: none;
 }
 
-
-.container-BZUZfa[data-cy="tier-0-marketing-page"]::before {
-    content: "";
-    max-width: 640px;
-    max-height: 606px;
-    aspect-ratio: 640/606;
-    width: 100%;
-    height: 100%;
-    display: block;
-    background: url("https://cdn.discordapp.com/attachments/1036084227080462366/1084269399302754404/discord_nitro.gif") no-repeat;
-    background-size: cover;
+.hideEmoji__06d79 {
+	opacity: 1;
 }
 
-/*.profileBadges-31rDHI {
-    z-index: 0;
-}
-
-.profileBadges-31rDHI::before {
-    background-color: #ff00ff00;
-    width: 100%;
-    height: 100%;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    content: "";
-    display: block;
-    z-index: 10;
-}*/
-
-.effectsWrapper-1M6qbb {
-    animation: none !important;
-}
-
-.effectsWrapper-1M6qbb {
-    display: none !important;
+.container__74da1[data-cy="tier-0-marketing-page"]::before 
+{
+	content: "";
+	max-width: 640px;
+	max-height: 606px;
+	aspect-ratio: 640/606;
+	width: 100%;
+	height: 100%;
+	display: block;
+	background: url("https://cdn.discordapp.com/attachments/1036084227080462366/1084269399302754404/discord_nitro.gif") no-repeat;
+	background-size: cover;
 }
