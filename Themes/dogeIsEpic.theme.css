@@ -44,16 +44,15 @@ div.wordmarkWindows__05c46.wordmark__0d178::before {
 	color: var(--header-primary);
 	font-family: var(--font-display);
 	content: "";
-	width: 16px;
-	height: 16px;
+    width: 16px;
+    height: 16px;
 	margin-right: 6px;
 	float: left;
 
 	background: url("https://media.discordapp.net/stickers/859906397818978314.webp") no-repeat;
 	filter: grayscale(1);
-	background-size: cover;
+    background-size: cover;
 }
-
 /*
 yes, that is the entirety of the code.
 */
