@@ -39,6 +39,20 @@ div.side_b4b3f6 > :nth-child(n+12):nth-child(-n+18),
 	display: none !important;
 }
 
+.reaction_fef95b.shakeReaction__1106d,
+.effect__50f2a,
+.effect__8d136,
+.effectsWrapper__9fe42
+{
+	animation: none;
+}
+
+.effectsWrapper__9fe42
+{
+	visibility: hidden;
+	display: none !important;
+}
+
 .header__4f442 
 {
 	background-image: none;
