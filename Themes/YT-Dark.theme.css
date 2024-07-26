@@ -1,7 +1,3 @@
-//META{"name":"YT-Dark","description":"Dark theme for BetterDiscord inspired by Youtube's Dark Theme   --   This probably needs Dark Theme enabled to work   --   Released 2022-1-28 (Y-M-D)","author":"t឵឵឵#9679","version":"1.3.5"}*//
-
-
-
 /*
 BETTERDISCORD YOUTUBE DARK THEME
 by t
@@ -12,8 +8,6 @@ by t
  Discord: letter_t
  Email: tosiq25@gmail.com
 */
-
-
 
 @keyframes unread {  
 	0% { background-color: rgba(194,5,3,0.8); }
@@ -368,7 +362,7 @@ body,
 	background-color: #337959;
 }
 
-.mentioned_fa6fd2:before
+.mentioned_d5deea:before
 {
 	background-color: #fa1a1a
 }
@@ -499,25 +493,25 @@ div.channel.channel-voice.audio
 	border: 1px solid #651717;
 }
 
-.video-2HW4jD,
-.wrapper-1FP9YQ,
-.imageWrapper__178ee,
-.imageContainer__1b5e9,
+.video_f72aac,
+.wrapper_f72aac,
+.imageWrapper_d4597d,
+.imageContainer_cf58b5,
 .thin_eed6a8::-webkit-scrollbar-thumb,
 .messagesWrapper_e2e187 .auto_c49869::-webkit-scrollbar-thumb,
 .messagesWrapper_e2e187 .auto_c49869::-webkit-scrollbar-track,
 
-.embedMedia__4e169,
-.embedImage_eb54e3 img,
-.embedImage_eb54e3 video,
-.embedThumbnail__1f402 img,
-.embedThumbnail__1f402 video,
-.embedVideo__303fe img,
-.embedVideo__303fe video,
-.oneByOneGridSingle__8c6ef,
-.oneByOneGridSingle__8c6ef,
+.embedMedia_ad0b71,
+.embedImage_ad0b71 img,
+.embedImage_ad0b71 video,
+.embedThumbnail_ad0b71 img,
+.embedThumbnail_ad0b71 video,
+.embedVideo_ad0b71 img,
+.embedVideo_ad0b71 video,
+.embedGalleryImagesWrapper_ad0b71,
+.oneByOneGridSingle_cda674,
 .mediaAttachmentsContainer__242e2,
-.visualMediaItemContainer__582ad
+.visualMediaItemContainer_cda674
 {
 	border: 0px;
 	border-radius: 0px;
@@ -751,7 +745,7 @@ div.channel.channel-voice.audio
 	background-color: var(--background-mentioned-hover) !important;
 }
 
-.item_fd07a3
+.item_c4cd66
 {
 	background-color: var(--red-500);
 	width: 9px;
@@ -768,13 +762,13 @@ div.channel.channel-voice.audio
 	border-left: 1px solid #cece17;
 }
 
-.replying__38514, .highlighted_fc800f
+.replying_d5deea, .highlighted_d5deea
 {
 	box-shadow: inset 0px 0px 0px 1px #651717;
 	background-color: rgba(80,39,39,0.2);
 }
 
-.replying__38514:hover, .highlighted_fc800f:hover
+.replying_d5deea:hover, .highlighted_d5deea:hover
 {
 	background-color: rgba(60,39,39,0.2) !important;
 }
