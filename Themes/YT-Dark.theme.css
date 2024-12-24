@@ -501,14 +501,14 @@ div.channel.channel-voice.audio
 .messagesWrapper_e2e187 .auto_c49869::-webkit-scrollbar-thumb,
 .messagesWrapper_e2e187 .auto_c49869::-webkit-scrollbar-track,
 
-.embedMedia_ad0b71,
-.embedImage_ad0b71 img,
-.embedImage_ad0b71 video,
-.embedThumbnail_ad0b71 img,
-.embedThumbnail_ad0b71 video,
-.embedVideo_ad0b71 img,
-.embedVideo_ad0b71 video,
-.embedGalleryImagesWrapper_ad0b71,
+.embedMedia_b0068a,
+.embedImage_b0068a img,
+.embedImage_b0068a video,
+.embedThumbnail_b0068a img,
+.embedThumbnail_b0068a video,
+.embedVideo_b0068a img,
+.embedVideo_b0068a video,
+.embedGalleryImagesWrapper_b0068a,
 .oneByOneGridSingle_cda674,
 .mediaAttachmentsContainer__242e2,
 .visualMediaItemContainer_cda674
@@ -599,7 +599,8 @@ div.channel.channel-voice.audio
 	color: #cfcfcf;
 }
 
-.avatarSpeaking_c95053
+.avatarSpeaking_c95053,
+.avatarSpeaking_d80634
 {
 	box-shadow: 0 0 0 3px #ca1c1c, inset 0 0 0 0px #ca1c1c;
 	animation: speaking 2s ease-in-out infinite;
