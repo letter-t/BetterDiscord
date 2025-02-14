@@ -362,7 +362,7 @@ body,
 	background-color: #337959;
 }
 
-.mentioned_d5deea:before
+.mentioned__5126c:before
 {
 	background-color: #fa1a1a
 }
@@ -495,23 +495,25 @@ div.channel.channel-voice.audio
 
 .video_f72aac,
 .wrapper_f72aac,
-.imageWrapper_d4597d,
+.imageWrapper_af017a,
 .imageContainer_cf58b5,
-.thin_eed6a8::-webkit-scrollbar-thumb,
-.messagesWrapper_e2e187 .auto_c49869::-webkit-scrollbar-thumb,
-.messagesWrapper_e2e187 .auto_c49869::-webkit-scrollbar-track,
+.thin__99f8c::-webkit-scrollbar-track,
+.messagesWrapper__36d07 .auto_d125d2::-webkit-scrollbar-thumb, 
+.messagesWrapper__36d07 .auto_d125d2::-webkit-scrollbar-track,
 
-.embedMedia_b0068a,
-.embedImage_b0068a img,
-.embedImage_b0068a video,
-.embedThumbnail_b0068a img,
-.embedThumbnail_b0068a video,
-.embedVideo_b0068a img,
-.embedVideo_b0068a video,
-.embedGalleryImagesWrapper_b0068a,
-.oneByOneGridSingle_cda674,
+.embedMedia__623de,
+.embedImage__623de img,
+.embedImage__623de video,
+.embedThumbnail__623de img,
+.embedThumbnail__623de video,
+.embedVideo__623de img,
+.embedVideo__623de video,
+.embedGalleryImagesWrapper__623de,
+.oneByOneGridSingle_f4758a,
+.oneByOneGrid_f4758a,
 .mediaAttachmentsContainer__242e2,
-.visualMediaItemContainer_cda674
+.visualMediaItemContainer_f4758a,
+.mosaicItemMediaMosaic__6c706
 {
 	border: 0px;
 	border-radius: 0px;
@@ -522,7 +524,7 @@ div.channel.channel-voice.audio
 	border-radius: 2px !important;
 }
 
-.messagesWrapper_e2e187 .auto_c49869::-webkit-scrollbar-thumb
+.messagesWrapper__36d07 .auto_d125d2::-webkit-scrollbar-thumb
 {
 	background-color: #161616 !important;
 }
@@ -551,19 +553,19 @@ div.channel.channel-voice.audio
 	color: var(--green-260);
 }
 
-.wrapper_d8bfb3.modeSelected_d8bfb3 .icon_d8bfb3,
-.wrapper_d8bfb3.modeSelected_d8bfb3:hover .icon_d8bfb3
+.wrapper__2ea32.modeSelected__2ea32 .icon__2ea32,
+.wrapper__2ea32.modeSelected__2ea32:hover .icon__2ea32
 {
 	color: #451919;
 }
 
-.modeMuted_d8bfb3 .icon_d8bfb3
+.modeMuted__2ea32 .icon__2ea32
 {
 	color: #6a2323;
 }
 
-.wrapper_d8bfb3.modeUnreadImportant_d8bfb3 .icon_d8bfb3,
-.wrapper_d8bfb3.modeUnreadImportant_d8bfb3:hover .icon_d8bfb3
+.wrapper__2ea32.modeUnreadImportant__2ea32 .icon__2ea32,
+.wrapper__2ea32.modeUnreadImportant__2ea32:hover .icon__2ea32
 {
 	color: #cc2121;
 }
@@ -612,20 +614,20 @@ div.channel.channel-voice.audio
 	animation: speaking2 2s ease-in-out infinite;
 }
 
-/*.wrapper_d8bfb3.modeSelected_d8bfb3 .link_d8bfb3,
-.wrapper_d8bfb3.modeSelected_d8bfb3:hover .link_d8bfb3
+/*.wrapper__2ea32.modeSelected__2ea32 .link__2ea32,
+.wrapper__2ea32.modeSelected__2ea32:hover .link__2ea32
 {
 	background: linear-gradient(to right,#7f1212 85%,var(--background-secondary));
 	padding-left: 11px;
 }
 
-.wrapper_d8bfb3:hover .link_d8bfb3,
-.wrapper_d8bfb3.modeUnreadImportant_d8bfb3:hover > div > .link_d8bfb3
+.wrapper__2ea32:hover .link__2ea32,
+.wrapper__2ea32.modeUnreadImportant__2ea32:hover > div > .link__2ea32
 {
 	background: linear-gradient(to right,#511616 85%,var(--background-secondary));
 }
 
-.wrapper_d8bfb3.modeUnreadImportant_d8bfb3 > div > .link_d8bfb3
+.wrapper__2ea32.modeUnreadImportant__2ea32 > div > .link__2ea32
 {
 	background: linear-gradient(to right,#212121 85%,#1a1a1a);
 	--borderWidth: 1.28px;
@@ -638,7 +640,7 @@ div.channel.channel-voice.audio
 	border-radius: 3px 0 0 3px;
 }
 
-.wrapper_d8bfb3.modeUnreadImportant_d8bfb3 > div > .link_d8bfb3:after
+.wrapper__2ea32.modeUnreadImportant__2ea32 > div > .link__2ea32:after
 {
 	content: '';
 	position: absolute;
@@ -661,7 +663,7 @@ div.channel.channel-voice.audio
 	animation: slide-to-right 5s linear infinite;
 }
 
-.wrapper_d8bfb3.modeUnreadImportant_d8bfb3 > div > .link_d8bfb3:hover:after
+.wrapper__2ea32.modeUnreadImportant__2ea32 > div > .link__2ea32:hover:after
 {
 	--offset: 3.74%;
 	background: linear-gradient(60deg,
@@ -676,7 +678,7 @@ div.channel.channel-voice.audio
 	animation: slide-to-right 5s linear infinite;
 }
 
-.wrapper_d8bfb3.modeUnreadImportant_d8bfb3 > div > .link_d8bfb3:before
+.wrapper__2ea32.modeUnreadImportant__2ea32 > div > .link__2ea32:before
 {
 	content: '';
 	position: absolute;
@@ -688,8 +690,8 @@ div.channel.channel-voice.audio
 		var(--background-secondary));
 }
 
-.wrapper_d8bfb3.modeUnreadImportant_d8bfb3 .name__4eb92,
-.wrapper_d8bfb3.modeUnreadImportant_d8bfb3:hover .name__4eb92
+.wrapper__2ea32.modeUnreadImportant__2ea32 .name__4eb92,
+.wrapper__2ea32.modeUnreadImportant__2ea32:hover .name__4eb92
 {
 	color: #ffffff00;
 	background-image: linear-gradient(to right,#fff,#888, 
@@ -701,7 +703,7 @@ div.channel.channel-voice.audio
 	font-weight: bold;
 }*/
 
-.unread_d8bfb3
+.unread__2ea32
 {
 	background-color: hsla(0,0%,0%,0);
 }
@@ -746,7 +748,7 @@ div.channel.channel-voice.audio
 	background-color: var(--background-mentioned-hover) !important;
 }
 
-.item_c4cd66
+.item__58105
 {
 	background-color: var(--red-500);
 	width: 9px;
@@ -792,35 +794,35 @@ div.channel.channel-voice.audio
 	color: #a21717;
 }
 
-.reaction_ec6b19
+.reaction__23977
 {
 	border: 1px solid #202020;
 	border-radius: 0.25rem;
 	background: #202020;
 }
 
-.reaction_ec6b19:hover
+.reaction__23977:hover
 {
 	border-color: rgba(80, 80, 80,0.6);
 	box-shadow: inset 0 0 0 3px rgba(80, 80, 80, 0.1), inset 0 0 0 2px rgba(80, 80, 80, 0.2), inset 0 0 0 1px rgba(80, 80, 80, 0.2);
 	background: #282828;
 }
 
-.reaction_ec6b19.reactionMe_ec6b19
+.reaction__23977.reactionMe__23977
 {
 	border-color: rgba(255,0,0,0.7);
 	background-color: rgba(66, 66, 66, 0.3);
 	box-shadow: inset 0 0 0 3px rgba(255, 0, 0, 0.1), inset 0 0 0 2px rgba(255, 0, 0, 0.2), inset 0 0 0 1px rgba(255, 0, 0, 0.3);
 }
 
-.reactionInner_ec6b19
+.reactionInner__23977
 {
 	padding-top: 2px;
 	padding-bottom: 2px;
 }
 
-.reaction_ec6b19.reactionMe_ec6b19 .reactionCount__2c34d,
-.reaction_ec6b19.reactionMe_ec6b19:hover .reactionCount__2c34d
+.reaction__23977.reactionMe__23977 .reactionCount__23977,
+.reaction__23977.reactionMe__23977:hover .reactionCount__23977
 {
 	color: #ddd !important;
 }
@@ -910,7 +912,8 @@ div.channel.channel-voice.audio
 	height: 100% !important;
 }
 
-.message__80c10.mentioned__58017.selected_fd9051, .mouse-mode.full-motion .mentioned__58017:hover {
+.message__5126c.mentioned__5126c.selected_fd9051, .mouse-mode.full-motion .mentioned__5126c:hover
+{
 	background-color: var(--background-mentioned-hover) !important;
 }
 
