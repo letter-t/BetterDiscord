@@ -41,19 +41,44 @@ by t
 	100% { box-shadow: 0 0 0 3px rgba(255, 0, 0, 0); }
 }
 
-.theme-dark, 
-.theme-light
+.theme-light,
+.theme-dark,
+.theme-darker,
+.theme-midnight,
+.visual-refresh.theme-light,
+.visual-refresh.theme-dark,
+.visual-refresh.theme-darker,
+.visual-refresh.theme-midnight
 {
 	--header-primary: #fff;
 	--header-secondary: #bbbbbb;
 	--text-normal: #dcddde;
 	--text-muted: #7b7b7b;
-	--text-link: #f40000;
+	--text-link: #f40000 !important;
 	--channels-default: #929292;
 	--interactive-normal: #bbbbbb;
 	--interactive-hover: #dddddd;
 	--interactive-active: #fff;
 	--interactive-muted: #545454;
+
+	--bg-base-primary: #121212 !important;
+	--bg-base-secondary: #161616 !important;
+	--bg-base-tertiary: #1a1a1a !important;
+
+	--background-base-low: #161616 !important;
+	--background-base-lower: #121212 !important;
+	--background-base-lowest: #161616 !important;
+	--background-surface-high: #161616 !important;
+	--background-surface-higher: #1a1a1a !important;
+	--background-surface-highest: #212121 !important;
+	--bg-surface-overlay: #1a1a1a;
+
+	--chat-background-default: #1a1a1a;
+	--autocomplete-bg: #1a1a1a;
+	--background-code: #191919;
+	--spoiler-hidden-background: #212121;
+	--spoiler-hidden-background-hover: #2f2f2f;
+
 	--background-primary: #121212;
 	--background-secondary: #161616;
 	--background-secondary-alt: #161616;
@@ -163,9 +188,218 @@ by t
 	--primary-860-hsl: 0 0% 1.8%;  /* 2.5 */
 	--primary-900-hsl: 0 0% 0.6%;  /* 0.8 */
 
+	/* why did they add so MANY */
+	--blurple-1: hsl(0 calc(1*100%) 95.294% /1);
+	--blurple-1-hsl: 0 calc(var(--saturation-factor, 1)* 100%) 95.294%;
+	--blurple-2: hsl(0 calc(1*100%) 94.51% /1);
+	--blurple-2-hsl: 0 calc(var(--saturation-factor, 1)* 100%) 94.51%;
+	--blurple-3: hsl(0 calc(1*100%) 93.725% /1);
+	--blurple-3-hsl: 0 calc(var(--saturation-factor, 1)* 100%) 93.725%;
+	--blurple-4: hsl(0 calc(1*100%) 93.137% /1);
+	--blurple-4-hsl: 0 calc(var(--saturation-factor, 1)* 100%) 93.137%;
+	--blurple-5: hsl(0 calc(1*100%) 92.353% /1);
+	--blurple-5-hsl: 0 calc(var(--saturation-factor, 1)* 100%) 92.353%;
+	--blurple-6: hsl(0 calc(1*100%) 91.765% /1);
+	--blurple-6-hsl: 0 calc(var(--saturation-factor, 1)* 100%) 91.765%;
+	--blurple-7: hsl(0 calc(1*100%) 90.98% /1);
+	--blurple-7-hsl: 0 calc(var(--saturation-factor, 1)* 100%) 90.98%;
+	--blurple-8: hsl(0 calc(1*100%) 90.392% /1);
+	--blurple-8-hsl: 0 calc(var(--saturation-factor, 1)* 100%) 90.392%;
+	--blurple-9: hsl(0 calc(1*100%) 89.608% /1);
+	--blurple-9-hsl: 0 calc(var(--saturation-factor, 1)* 100%) 89.608%;
+	--blurple-10: hsl(0 calc(1*100%) 89.02% /1);
+	--blurple-10-hsl: 0 calc(var(--saturation-factor, 1)* 100%) 89.02%;
+	--blurple-11: hsl(0 calc(1*100%) 88.235% /1);
+	--blurple-11-hsl: 0 calc(var(--saturation-factor, 1)* 100%) 88.235%;
+	--blurple-12: hsl(0 calc(1*100%) 87.647% /1);
+	--blurple-12-hsl: 0 calc(var(--saturation-factor, 1)* 100%) 87.647%;
+	--blurple-13: hsl(0 calc(1*100%) 87.059% /1);
+	--blurple-13-hsl: 0 calc(var(--saturation-factor, 1)* 100%) 87.059%;
+	--blurple-14: hsl(0 calc(1*100%) 86.275% /1);
+	--blurple-14-hsl: 0 calc(var(--saturation-factor, 1)* 100%) 86.275%;
+	--blurple-15: hsl(0 calc(1*100%) 85.686% /1);
+	--blurple-15-hsl: 0 calc(var(--saturation-factor, 1)* 100%) 85.686%;
+	--blurple-16: hsl(0 calc(1*100%) 85.098% /1);
+	--blurple-16-hsl: 0 calc(var(--saturation-factor, 1)* 100%) 85.098%;
+	--blurple-17: hsl(0 calc(1*100%) 84.314% /1);
+	--blurple-17-hsl: 0 calc(var(--saturation-factor, 1)* 100%) 84.314%;
+	--blurple-18: hsl(0 calc(1*100%) 83.725% /1);
+	--blurple-18-hsl: 0 calc(var(--saturation-factor, 1)* 100%) 83.725%;
+	--blurple-19: hsl(0 calc(1*100%) 83.137% /1);
+	--blurple-19-hsl: 0 calc(var(--saturation-factor, 1)* 100%) 83.137%;
+	--blurple-20: hsl(0 calc(1*100%) 82.549% /1);
+	--blurple-20-hsl: 0 calc(var(--saturation-factor, 1)* 100%) 82.549%;
+    --blurple-21: hsl(0 calc(1*97.849%) 81.765% /1);
+    --blurple-21-hsl: 0 calc(var(--saturation-factor, 1)* 97.849%) 81.765%;
+    --blurple-22: hsl(0 calc(1*97.938%) 80.98% /1);
+    --blurple-22-hsl: 0 calc(var(--saturation-factor, 1)* 97.938%) 80.98%;
+    --blurple-23: hsl(0 calc(1*98%) 80.392% /1);
+    --blurple-23-hsl: 0 calc(var(--saturation-factor, 1)* 98%) 80.392%;
+    --blurple-24: hsl(0 calc(1*96.154%) 79.608% /1);
+    --blurple-24-hsl: 0 calc(var(--saturation-factor, 1)* 96.154%) 79.608%;
+    --blurple-25: hsl(0 calc(1*96.262%) 79.02% /1);
+    --blurple-25-hsl: 0 calc(var(--saturation-factor, 1)* 96.262%) 79.02%;
+    --blurple-26: hsl(0 calc(1*96.364%) 78.431% /1);
+    --blurple-26-hsl: 0 calc(var(--saturation-factor, 1)* 96.364%) 78.431%;
+    --blurple-27: hsl(0 calc(1*94.737%) 77.647% /1);
+    --blurple-27-hsl: 0 calc(var(--saturation-factor, 1)* 94.737%) 77.647%;
+    --blurple-28: hsl(0 calc(1*94.872%) 77.059% /1);
+    --blurple-28-hsl: 0 calc(var(--saturation-factor, 1)* 94.872%) 77.059%;
+    --blurple-29: hsl(0 calc(1*93.333%) 76.471% /1);
+    --blurple-29-hsl: 0 calc(var(--saturation-factor, 1)* 93.333%) 76.471%;
+    --blurple-30: hsl(0 calc(1*93.496%) 75.882% /1);
+    --blurple-30-hsl: 0 calc(var(--saturation-factor, 1)* 93.496%) 75.882%;
+    --blurple-31: hsl(0 calc(1*93.651%) 75.294% /1);
+    --blurple-31-hsl: 0 calc(var(--saturation-factor, 1)* 93.651%) 75.294%;
+    --blurple-32: hsl(0 calc(1*92.308%) 74.51% /1);
+    --blurple-32-hsl: 0 calc(var(--saturation-factor, 1)* 92.308%) 74.51%;
+    --blurple-33: hsl(0 calc(1*92.481%) 73.922% /1);
+    --blurple-33-hsl: 0 calc(var(--saturation-factor, 1)* 92.481%) 73.922%;
+    --blurple-34: hsl(0 calc(1*91.176%) 73.333% /1);
+    --blurple-34-hsl: 0 calc(var(--saturation-factor, 1)* 91.176%) 73.333%;
+    --blurple-35: hsl(0 calc(1*91.367%) 72.745% /1);
+    --blurple-35-hsl: 0 calc(var(--saturation-factor, 1)* 91.367%) 72.745%;
+    --blurple-36: hsl(0 calc(1*90.21%) 71.961% /1);
+    --blurple-36-hsl: 0 calc(var(--saturation-factor, 1)* 90.21%) 71.961%;
+    --blurple-37: hsl(0 calc(1*90.345%) 71.569% /1);
+    --blurple-37-hsl: 0 calc(var(--saturation-factor, 1)* 90.345%) 71.569%;
+    --blurple-38: hsl(0 calc(1*89.262%) 70.784% /1);
+    --blurple-38-hsl: 0 calc(var(--saturation-factor, 1)* 89.262%) 70.784%;
+    --blurple-39: hsl(0 calc(1*89.474%) 70.196% /1);
+    --blurple-39-hsl: 0 calc(var(--saturation-factor, 1)* 89.474%) 70.196%;
+    --blurple-40: hsl(0 calc(1*88.387%) 69.608% /1);
+    --blurple-40-hsl: 0 calc(var(--saturation-factor, 1)* 88.387%) 69.608%;
+    --blurple-41: hsl(0 calc(1*88.608%) 69.02% /1);
+    --blurple-41-hsl: 0 calc(var(--saturation-factor, 1)* 88.608%) 69.02%;
+    --blurple-42: hsl(0 calc(1*87.578%) 68.431% /1);
+    --blurple-42-hsl: 0 calc(var(--saturation-factor, 1)* 87.578%) 68.431%;
+    --blurple-43: hsl(0 calc(1*87.73%) 68.039% /1);
+    --blurple-43-hsl: 0 calc(var(--saturation-factor, 1)* 87.73%) 68.039%;
+    --blurple-44: hsl(0 calc(1*86.826%) 67.255% /1);
+    --blurple-44-hsl: 0 calc(var(--saturation-factor, 1)* 86.826%) 67.255%;
+    --blurple-45: hsl(0 calc(1*86.982%) 66.863% /1);
+    --blurple-45-hsl: 0 calc(var(--saturation-factor, 1)* 86.982%) 66.863%;
+    --blurple-46: hsl(0 calc(1*86.047%) 66.275% /1);
+    --blurple-46-hsl: 0 calc(var(--saturation-factor, 1)* 86.047%) 66.275%;
+    --blurple-47: hsl(0 calc(1*86.286%) 65.686% /1);
+    --blurple-47-hsl: 0 calc(var(--saturation-factor, 1)* 86.286%) 65.686%;
+    --blurple-48: hsl(0 calc(1*85.393%) 65.098% /1);
+    --blurple-48-hsl: 0 calc(var(--saturation-factor, 1)* 85.393%) 65.098%;
+    --blurple-49: hsl(0 calc(1*85.556%) 64.706% /1);
+    --blurple-49-hsl: 0 calc(var(--saturation-factor, 1)* 85.556%) 64.706%;
+    --blurple-50: hsl(0 calc(1*85.556%) 64.706% /1);
+    --blurple-50-hsl: 0 calc(var(--saturation-factor, 1)* 85.556%) 64.706%;
+    --blurple-51: hsl(0 calc(1*79.787%) 63.137% /1);
+    --blurple-51-hsl: 0 calc(var(--saturation-factor, 1)* 79.787%) 63.137%;
+    --blurple-52: hsl(0 calc(1*74.49%) 61.569% /1);
+    --blurple-52-hsl: 0 calc(var(--saturation-factor, 1)* 74.49%) 61.569%;
+    --blurple-53: hsl(0 calc(1*69.608%) 60% /1);
+    --blurple-53-hsl: 0 calc(var(--saturation-factor, 1)* 69.608%) 60%;
+    --blurple-54: hsl(0 calc(1*65.877%) 58.627% /1);
+    --blurple-54-hsl: 0 calc(var(--saturation-factor, 1)* 65.877%) 58.627%;
+    --blurple-55: hsl(0 calc(1*61.644%) 57.059% /1);
+    --blurple-55-hsl: 0 calc(var(--saturation-factor, 1)* 61.644%) 57.059%;
+    --blurple-56: hsl(0 calc(1*58.407%) 55.686% /1);
+    --blurple-56-hsl: 0 calc(var(--saturation-factor, 1)* 58.407%) 55.686%;
+    --blurple-57: hsl(0 calc(1*55.365%) 54.314% /1);
+    --blurple-57-hsl: 0 calc(var(--saturation-factor, 1)* 55.365%) 54.314%;
+    --blurple-58: hsl(0 calc(1*52.5%) 52.941% /1);
+    --blurple-58-hsl: 0 calc(var(--saturation-factor, 1)* 52.5%) 52.941%;
+    --blurple-59: hsl(0 calc(1*49.194%) 51.373% /1);
+    --blurple-59-hsl: 0 calc(var(--saturation-factor, 1)* 49.194%) 51.373%;
+    --blurple-60: hsl(0 calc(1*46.667%) 50% /1);
+    --blurple-60-hsl: 0 calc(var(--saturation-factor, 1)* 46.667%) 50%;
+    --blurple-61: hsl(0 calc(1*46.774%) 48.627% /1);
+    --blurple-61-hsl: 0 calc(var(--saturation-factor, 1)* 46.774%) 48.627%;
+    --blurple-62: hsl(0 calc(1*47.107%) 47.451% /1);
+    --blurple-62-hsl: 0 calc(var(--saturation-factor, 1)* 47.107%) 47.451%;
+    --blurple-63: hsl(0 calc(1*47.234%) 46.078% /1);
+    --blurple-63-hsl: 0 calc(var(--saturation-factor, 1)* 47.234%) 46.078%;
+    --blurple-64: hsl(0 calc(1*47.368%) 44.706% /1);
+    --blurple-64-hsl: 0 calc(var(--saturation-factor, 1)* 47.368%) 44.706%;
+    --blurple-65: hsl(0 calc(1*47.511%) 43.333% /1);
+    --blurple-65-hsl: 0 calc(var(--saturation-factor, 1)* 47.511%) 43.333%;
+    --blurple-66: hsl(0 calc(1*47.907%) 42.157% /1);
+    --blurple-66-hsl: 0 calc(var(--saturation-factor, 1)* 47.907%) 42.157%;
+    --blurple-67: hsl(0 calc(1*48.077%) 40.784% /1);
+    --blurple-67-hsl: 0 calc(var(--saturation-factor, 1)* 48.077%) 40.784%;
+    --blurple-68: hsl(0 calc(1*48.515%) 39.608% /1);
+    --blurple-68-hsl: 0 calc(var(--saturation-factor, 1)* 48.515%) 39.608%;
+    --blurple-69: hsl(0 calc(1*48.718%) 38.235% /1);
+    --blurple-69-hsl: 0 calc(var(--saturation-factor, 1)* 48.718%) 38.235%;
+    --blurple-70: hsl(0 calc(1*49.206%) 37.059% /1);
+    --blurple-70-hsl: 0 calc(var(--saturation-factor, 1)* 49.206%) 37.059%;
+    --blurple-71: hsl(0 calc(1*49.727%) 35.882% /1);
+    --blurple-71-hsl: 0 calc(var(--saturation-factor, 1)* 49.727%) 35.882%;
+    --blurple-72: hsl(0 calc(1*50%) 34.51% /1);
+    --blurple-72-hsl: 0 calc(var(--saturation-factor, 1)* 50%) 34.51%;
+    --blurple-73: hsl(0 calc(1*50.588%) 33.333% /1);
+    --blurple-73-hsl: 0 calc(var(--saturation-factor, 1)* 50.588%) 33.333%;
+    --blurple-74: hsl(0 calc(1*51.22%) 32.157% /1);
+    --blurple-74-hsl: 0 calc(var(--saturation-factor, 1)* 51.22%) 32.157%;
+    --blurple-75: hsl(0 calc(1*50.943%) 31.176% /1);
+    --blurple-75-hsl: 0 calc(var(--saturation-factor, 1)* 50.943%) 31.176%;
+    --blurple-76: hsl(0 calc(1*51.316%) 29.804% /1);
+    --blurple-76-hsl: 0 calc(var(--saturation-factor, 1)* 51.316%) 29.804%;
+    --blurple-77: hsl(0 calc(1*52.055%) 28.627% /1);
+    --blurple-77-hsl: 0 calc(var(--saturation-factor, 1)* 52.055%) 28.627%;
+    --blurple-78: hsl(0 calc(1*52.857%) 27.451% /1);
+    --blurple-78-hsl: 0 calc(var(--saturation-factor, 1)* 52.857%) 27.451%;
+    --blurple-79: hsl(0 calc(1*53.731%) 26.275% /1);
+    --blurple-79-hsl: 0 calc(var(--saturation-factor, 1)* 53.731%) 26.275%;
+    --blurple-80: hsl(0 calc(1*54.688%) 25.098% /1);
+    --blurple-80-hsl: 0 calc(var(--saturation-factor, 1)* 54.688%) 25.098%;
+    --blurple-81: hsl(0 calc(1*54.472%) 24.118% /1);
+    --blurple-81-hsl: 0 calc(var(--saturation-factor, 1)* 54.472%) 24.118%;
+    --blurple-82: hsl(0 calc(1*55.556%) 22.941% /1);
+    --blurple-82-hsl: 0 calc(var(--saturation-factor, 1)* 55.556%) 22.941%;
+    --blurple-83: hsl(0 calc(1*57.143%) 21.961% /1);
+    --blurple-83-hsl: 0 calc(var(--saturation-factor, 1)* 57.143%) 21.961%;
+    --blurple-84: hsl(0 calc(1*57.009%) 20.98% /1);
+    --blurple-84-hsl: 0 calc(var(--saturation-factor, 1)* 57.009%) 20.98%;
+    --blurple-85: hsl(0 calc(1*58.416%) 19.804% /1);
+    --blurple-85-hsl: 0 calc(var(--saturation-factor, 1)* 58.416%) 19.804%;
+    --blurple-86: hsl(0 calc(1*60%) 18.627% /1);
+    --blurple-86-hsl: 0 calc(var(--saturation-factor, 1)* 60%) 18.627%;
+    --blurple-87: hsl(0 calc(1*60%) 17.647% /1);
+    --blurple-87-hsl: 0 calc(var(--saturation-factor, 1)* 60%) 17.647%;
+    --blurple-88: hsl(0 calc(1*62.353%) 16.667% /1);
+    --blurple-88-hsl: 0 calc(var(--saturation-factor, 1)* 62.353%) 16.667%;
+    --blurple-89: hsl(0 calc(1*62.5%) 15.686% /1);
+    --blurple-89-hsl: 0 calc(var(--saturation-factor, 1)* 62.5%) 15.686%;
+    --blurple-90: hsl(0 calc(1*64.865%) 14.51% /1);
+    --blurple-90-hsl: 0 calc(var(--saturation-factor, 1)* 64.865%) 14.51%;
+    --blurple-91: hsl(0 calc(1*65.714%) 13.725% /1);
+    --blurple-91-hsl: 0 calc(var(--saturation-factor, 1)* 65.714%) 13.725%;
+    --blurple-92: hsl(0 calc(1*68.75%) 12.549% /1);
+    --blurple-92-hsl: 0 calc(var(--saturation-factor, 1)* 68.75%) 12.549%;
+    --blurple-93: hsl(0 calc(1*69.492%) 11.569% /1);
+    --blurple-93-hsl: 0 calc(var(--saturation-factor, 1)* 69.492%) 11.569%;
+    --blurple-94: hsl(0 calc(1*73.585%) 10.392% /1);
+    --blurple-94-hsl: 0 calc(var(--saturation-factor, 1)* 73.585%) 10.392%;
+    --blurple-95: hsl(0 calc(1*74.468%) 9.216% /1);
+    --blurple-95-hsl: 0 calc(var(--saturation-factor, 1)* 74.468%) 9.216%;
+    --blurple-96: hsl(0 calc(1*75.61%) 8.039% /1);
+    --blurple-96-hsl: 0 calc(var(--saturation-factor, 1)* 75.61%) 8.039%;
+    --blurple-97: hsl(0 calc(1*76.471%) 6.667% /1);
+    --blurple-97-hsl: 0 calc(var(--saturation-factor, 1)* 76.471%) 6.667%;
+    --blurple-98: hsl(0 calc(1*76%) 4.902% /1);
+    --blurple-98-hsl: 0 calc(var(--saturation-factor, 1)* 76%) 4.902%;
+    --blurple-99: hsl(0 calc(1*84.615%) 2.549% /1);
+    --blurple-99-hsl: 0 calc(var(--saturation-factor, 1)* 84.615%) 2.549%;
+    --blurple-100: hsl(0 calc(1*0%) 0% /1);
+    --blurple-100-hsl: 0 calc(var(--saturation-factor, 1)* 0%) 0%;
+
 	--mention-foreground: #ce1313;
 	--mention-background: rgba(193, 33, 33, 0.14);
 	--channel-icon: #cc2121;
+
+	--guildbar-avatar-size: 40px;
+	--custom-guild-list-padding: 16px;
+}
+
+.visual-refresh {
+	--custom-channel-textarea-text-area-height: calc(36px + var(--space-xs));
 }
 
 .friends-table, 
@@ -765,13 +999,13 @@ div.channel.channel-voice.audio
 	border-left: 1px solid #cece17;
 }
 
-.replying_d5deea, .highlighted_d5deea
+.highlighted__5126c, .replying__5126c
 {
 	box-shadow: inset 0px 0px 0px 1px #651717;
 	background-color: rgba(80,39,39,0.2);
 }
 
-.replying_d5deea:hover, .highlighted_d5deea:hover
+.highlighted__5126c:hover, .replying__5126c:hover
 {
 	background-color: rgba(60,39,39,0.2) !important;
 }
@@ -794,35 +1028,35 @@ div.channel.channel-voice.audio
 	color: #a21717;
 }
 
-.reaction__23977
+.visual-refresh .reaction__23977
 {
 	border: 1px solid #202020;
 	border-radius: 0.25rem;
 	background: #202020;
 }
 
-.reaction__23977:hover
+.visual-refresh .reaction__23977:hover
 {
 	border-color: rgba(80, 80, 80,0.6);
 	box-shadow: inset 0 0 0 3px rgba(80, 80, 80, 0.1), inset 0 0 0 2px rgba(80, 80, 80, 0.2), inset 0 0 0 1px rgba(80, 80, 80, 0.2);
 	background: #282828;
 }
 
-.reaction__23977.reactionMe__23977
+.visual-refresh .reaction__23977.reactionMe__23977
 {
 	border-color: rgba(255,0,0,0.7);
 	background-color: rgba(66, 66, 66, 0.3);
 	box-shadow: inset 0 0 0 3px rgba(255, 0, 0, 0.1), inset 0 0 0 2px rgba(255, 0, 0, 0.2), inset 0 0 0 1px rgba(255, 0, 0, 0.3);
 }
 
-.reactionInner__23977
+.visual-refresh .reactionInner__23977
 {
 	padding-top: 2px;
 	padding-bottom: 2px;
 }
 
-.reaction__23977.reactionMe__23977 .reactionCount__23977,
-.reaction__23977.reactionMe__23977:hover .reactionCount__23977
+.visual-refresh .reaction__23977.reactionMe__23977 .reactionCount__23977,
+.visual-refresh .reaction__23977.reactionMe__23977:hover .reactionCount__23977
 {
 	color: #ddd !important;
 }
@@ -917,244 +1151,87 @@ div.channel.channel-voice.audio
 	background-color: var(--background-mentioned-hover) !important;
 }
 
-/*
-###################################################################################################
-*/
 
+/* this stuff was added on 3/29/2025 */
 
-/*
-Yo, Shoutout to mwittrien and his BlurpleRecolor theme for helping me figure out how to change these SVGs
-(I've never talked to the guy but his theme had what I needed)
-*/
-
-.uploadModalIn-2w48Zf .uploadDropModal-13Kd20 .bgScale-1iWuPF
-{
-	background-color: #bd3a3a;
+.buttons__74017 {
+	height: var(--custom-channel-textarea-text-area-height)
 }
 
-.uploadModalIn-2w48Zf .uploadDropModal-13Kd20 .inner-rBP-MS .icon-HW4tZ-.two-1t2_74
-{
-	filter: drop-shadow(0 0 48px rgba(230, 46, 46, .5));
+.blobContainer_e5445c,
+.tutorialContainer__1f388 > .listItem__650eb {
+	transform: scale(1.2) !important;
 }
 
-.attachment-1PZZB2
-{
-	position: relative;
+.visual-refresh .listItem__650eb {
+	margin: 4px 0 4px;
 }
 
-.attachment-1PZZB2 .icon-1KCy88,
-.uploadContainer-1neFYt .icon-2fEp67,
-.audioMetadata-1Hrt8T::before,
-.uploadModal-2ie9O_ .icon-HW4tZ-:not(.image-2ssF8k),
-.uploadModalIn-2w48Zf .icon-HW4tZ-:not(.image-2ssF8k),
-.uploadModalIn-2w48Zf .uploadDropModal-13Kd20 .icon-HW4tZ-.two-1t2_74
-{
-	object-position: -999999px -999999px;
-	background: url(https://mwittrien.github.io/BetterDiscordAddons/Themes/_res/svgs/blurple/files_bg.svg) center/contain no-repeat !important;
+.groupStart__5126c {
+	margin-top: 12px;
 }
 
-.uploadContainer-1neFYt .icon-2fEp67
-{
-	background-size: 72px 96px !important;
+.visual-refresh .attachButton__0923f {
+	padding: var(--space-12) var(--space-12);
 }
 
-.uploadModal-2ie9O_ .icon-HW4tZ-:not(.image-2ssF8k),
-.uploadModalIn-2w48Zf .icon-HW4tZ-:not(.image-2ssF8k),
-.uploadModalIn-2w48Zf .uploadDropModal-13Kd20 .icon-HW4tZ-.two-1t2_74
-{
-	background-size: 72px 96px !important;
+.visual-refresh .slateTextArea_ec4baf {
+	margin-left: 4px;
 }
 
-.attachment-1PZZB2 .icon-1KCy88 + *::before,
-.uploadContainer-1neFYt .icon-2fEp67::before,
-.audioMetadata-1Hrt8T > *:first-child::before,
-.uploadModal-2ie9O_ .icon-HW4tZ-:not(.image-2ssF8k)::before,
-.uploadModalIn-2w48Zf .icon-HW4tZ-:not(.image-2ssF8k)::before,
-.uploadModalIn-2w48Zf .uploadDropModal-13Kd20 .icon-HW4tZ-.two-1t2_74::before
-{
-	content: "";
-	position: absolute;
-	pointer-events: none;
-	background: #aaa;
+:where(.visual-refresh) .channelTextArea__74017,
+.visual-refresh .bottomBar__0f481,
+:where(.visual-refresh) .button__201d5 {
+	border-radius: var(--radius-xs);
 }
 
-.attachment-1PZZB2 .icon-1KCy88 + *::after,
-.uploadContainer-1neFYt .icon-2fEp67::after,
-.audioMetadata-1Hrt8T > *:first-child::after,
-.uploadModal-2ie9O_ .icon-HW4tZ-:not(.image-2ssF8k)::after,
-.uploadModalIn-2w48Zf .icon-HW4tZ-:not(.image-2ssF8k)::after,
-.uploadModalIn-2w48Zf .uploadDropModal-13Kd20 .icon-HW4tZ-.two-1t2_74::after
-{
-	content: "";
-	position: absolute;
-	pointer-events: none;
-	background: #bd3a3a;
+.visual-refresh .panels_c48ade {
+	left: calc(var(--custom-guild-list-width));
+	bottom: 0px;
+	width: calc(100% - var(--custom-guild-list-width));
+	border-radius: 0px;
+	border: solid var(--app-border-frame);
+	border-top-width: 1px;
+	border-left-width: 1px;
+	border-bottom-width: 0px;
+	border-right-width: 0px;
 }
 
-.audioMetadata-1Hrt8T::before
-{
-	flex: 0 0 auto !important;
-	background-position: top center !important;
+.visual-refresh .wrapper_ef3116 {
+	margin-bottom: 0px;
 }
 
-.attachment-1PZZB2 .icon-1KCy88 + *::before,
-.attachment-1PZZB2 .icon-1KCy88 + *::after
-{
-	top: 10px;
-	left: 10px;
-	width: 30px;
-	height: 40px;
+:where(.visual-refresh) .link__2ea32 {
+	border-radius: 3px;
 }
 
-.audioMetadata-1Hrt8T > *:first-child::before,
-.audioMetadata-1Hrt8T > *:first-child::after
-{
-	top: 10px;
-	left: 10px;
-	width: 24px;
-	height: 32px;
+.visual-refresh .container_c8ffbb {
+	border-left: 0px;
 }
 
-.uploadContainer-1neFYt .icon-2fEp67::before,
-.uploadContainer-1neFYt .icon-2fEp67::after
-{
-	width: 108px;
-	height: 144px;
-	margin-left: 46px;
-	-webkit-mask-size: 72px 96px !important;
+:where(.visual-refresh) .labelContainer_c1e9c4 {
+	padding: 4px;
 }
 
-.uploadModal-2ie9O_ .icon-HW4tZ-:not(.image-2ssF8k)::before,
-.uploadModal-2ie9O_ .icon-HW4tZ-:not(.image-2ssF8k)::after,
-.uploadModalIn-2w48Zf .icon-HW4tZ-:not(.image-2ssF8k)::before,
-.uploadModalIn-2w48Zf .icon-HW4tZ-:not(.image-2ssF8k)::after,
-.uploadModalIn-2w48Zf .uploadDropModal-13Kd20 .icon-HW4tZ-.two-1t2_74::before,
-.uploadModalIn-2w48Zf .uploadDropModal-13Kd20 .icon-HW4tZ-.two-1t2_74::after
-{
-	width: 100px;
-	height: 130px;
-	-webkit-mask-size: 72px 96px !important;
+:where(.visual-refresh) .separator_c1e9c4 {
+	margin: 4px;
 }
 
-.uploadModalIn-2w48Zf .error-3lNz4C .icon-HW4tZ-:not(.image-2ssF8k)::before,
-.uploadModalIn-2w48Zf .error-3lNz4C .icon-HW4tZ-:not(.image-2ssF8k)::after
-{
-	background: #bd3a3a;
+.sprite__04eed, .spriteContainer__04eed,
+.attachButtonInner__0923f {
+	transform: scale(1.2);
 }
 
-.attachment-1PZZB2 .icon-1KCy88 + *::before,
-.uploadContainer-1neFYt .icon-2fEp67::before,
-.audioMetadata-1Hrt8T > *:first-child::before,
-.uploadModal-2ie9O_ .icon-HW4tZ-:not(.image-2ssF8k)::before,
-.uploadModalIn-2w48Zf .icon-HW4tZ-:not(.image-2ssF8k)::before,
-.uploadModalIn-2w48Zf .uploadDropModal-13Kd20 .icon-HW4tZ-.two-1t2_74::before
-{
-	-webkit-mask: url(https://mwittrien.github.io/BetterDiscordAddons/Themes/_res/svgs/blurple/files_details.svg) center/contain no-repeat;
+.inner_c0bea0.biteSize_c0bea0 {
+	border: 1px solid var(--app-border-frame);
 }
 
-.attachment-1PZZB2 .icon-1KCy88 + *::after,
-.uploadContainer-1neFYt .icon-2fEp67.unknown-3zKKmA::after,
-.uploadModal-2ie9O_ .icon-HW4tZ-.unknown-3ClW7Z::after,
-.uploadModal-2ie9O_ .icon-HW4tZ-:not(.image-2ssF8k)::after,
-.uploadModalIn-2w48Zf .icon-HW4tZ-:not(.image-2ssF8k)::after
+.highlighted__5126c, .replying__5126c
 {
-	-webkit-mask: url(https://mwittrien.github.io/BetterDiscordAddons/Themes/_res/svgs/common/empty.svg) center/contain no-repeat;
+	box-shadow: inset 0px 0px 0px 1px #651717;
+	background-color: rgba(80,39,39,0.2);
 }
 
-.attachment-1PZZB2 .icon-1KCy88[title="acrobat"] + *::after,
-.uploadContainer-1neFYt .icon-2fEp67.acrobat-33WAV6::after,
-.uploadModal-2ie9O_ .icon-HW4tZ-.acrobat-2-m_um::after
-{
-	-webkit-mask: url(https://mwittrien.github.io/BetterDiscordAddons/Themes/_res/svgs/blurple/files_acrobat_accent.svg) center/contain no-repeat;
-}
-
-.attachment-1PZZB2 .icon-1KCy88[title="ae"] + *::after,
-.uploadContainer-1neFYt .icon-2fEp67.ae-17cU1_::after,
-.uploadModal-2ie9O_ .icon-HW4tZ-.ae-1bPydY::after
-{
-	-webkit-mask: url(https://mwittrien.github.io/BetterDiscordAddons/Themes/_res/svgs/blurple/files_ae_accent.svg) center/contain no-repeat;
-}
-
-.attachment-1PZZB2 .icon-1KCy88[title="ai"] + *::after,
-.uploadContainer-1neFYt .icon-2fEp67.ai-3R_H7o::after,
-.uploadModal-2ie9O_ .icon-HW4tZ-.ai-1QhRgT::after
-{
-	-webkit-mask: url(https://mwittrien.github.io/BetterDiscordAddons/Themes/_res/svgs/blurple/files_ai_accent.svg) center/contain no-repeat;
-}
-
-.attachment-1PZZB2 .icon-1KCy88[title="archive"] + *::after,
-.uploadContainer-1neFYt .icon-2fEp67.archive-2dk1co::after,
-.uploadModal-2ie9O_ .icon-HW4tZ-.archive-2bNoJA::after
-{
-	-webkit-mask: url(https://mwittrien.github.io/BetterDiscordAddons/Themes/_res/svgs/blurple/files_archive_accent.svg) center/contain no-repeat;
-}
-
-.attachment-1PZZB2 .icon-1KCy88[title="audio"] + *::after,
-.uploadContainer-1neFYt .icon-2fEp67.audio-2Xxeqv::after,
-.audioMetadata-1Hrt8T > *:first-child::after,
-.uploadModal-2ie9O_ .icon-HW4tZ-.audio-YC1s9s::after
-{
-	-webkit-mask: url(https://mwittrien.github.io/BetterDiscordAddons/Themes/_res/svgs/blurple/files_audio_accent.svg) center/contain no-repeat;
-}
-
-.attachment-1PZZB2 .icon-1KCy88[title="code"] + *::after,
-.uploadContainer-1neFYt .icon-2fEp67.code-10NPWN::after,
-.uploadModal-2ie9O_ .icon-HW4tZ-.code-rRQnfi::after,
-.uploadModalIn-2w48Zf .icon-HW4tZ-.two-1t2_74::after
-{
-	-webkit-mask: url(https://mwittrien.github.io/BetterDiscordAddons/Themes/_res/svgs/blurple/files_code_accent.svg) center/contain no-repeat;
-}
-
-.attachment-1PZZB2 .icon-1KCy88[title="document"] + *::after,
-.uploadContainer-1neFYt .icon-2fEp67.document-1HIQqD::after,
-.uploadModal-2ie9O_ .icon-HW4tZ-.document-1u6V3N::after, 
-.uploadModalIn-2w48Zf .icon-HW4tZ-.three-fZYihQ::after
-{
-	-webkit-mask: url(https://mwittrien.github.io/BetterDiscordAddons/Themes/_res/svgs/blurple/files_document_accent.svg) center/contain no-repeat;
-}
-
-.attachment-1PZZB2 .icon-1KCy88[title="photoshop"] + *::after,
-.attachment-1PZZB2 .icon-1KCy88[title="ps"] + *::after,
-.uploadContainer-1neFYt .icon-2fEp67.photoshop-3aNHj5::after,
-.uploadContainer-1neFYt .icon-2fEp67.ps-3aLfSc::after,
-.uploadModal-2ie9O_ .icon-HW4tZ-.photoshop-LN9Et_::after,
-.uploadModal-2ie9O_ .icon-HW4tZ-.ps-1C6rg4::after
-{
-	-webkit-mask: url(https://mwittrien.github.io/BetterDiscordAddons/Themes/_res/svgs/blurple/files_photoshop_accent.svg) center/contain no-repeat;
-}
-
-.attachment-1PZZB2 .icon-1KCy88[title="sketch"] + *::after,
-.uploadContainer-1neFYt .icon-2fEp67.sketch-3b6dg-::after,
-.uploadModal-2ie9O_ .icon-HW4tZ-.sketch-t3m6M1::after
-{
-	-webkit-mask: url(https://mwittrien.github.io/BetterDiscordAddons/Themes/_res/svgs/blurple/files_sketch_accent.svg) center/contain no-repeat;
-}
-
-.attachment-1PZZB2 .icon-1KCy88[title="spreadsheet"] + *::after,
-.uploadContainer-1neFYt .icon-2fEp67.spreadsheet-1PqMsQ::after,
-.uploadModal-2ie9O_ .icon-HW4tZ-.spreadsheet-1wEQpO::after,
-.uploadModalIn-2w48Zf .icon-HW4tZ-.one-NzgGbt::after
-{
-	-webkit-mask: url(https://mwittrien.github.io/BetterDiscordAddons/Themes/_res/svgs/blurple/files_spreadsheet_accent.svg) center/contain no-repeat;
-}
-
-.attachment-1PZZB2 .icon-1KCy88[title="video"] + *::after,
-.uploadContainer-1neFYt .icon-2fEp67.video-2cigyM::after,
-.uploadModal-2ie9O_ .icon-HW4tZ-.video-L7uQxc::after
-{
-	-webkit-mask: url(https://mwittrien.github.io/BetterDiscordAddons/Themes/_res/svgs/blurple/files_video_accent.svg) center/contain no-repeat;
-}
-
-.attachment-1PZZB2 .icon-1KCy88[title="webcode"] + *::after,
-.uploadContainer-1neFYt .icon-2fEp67.webcode-1sNqh1::after,
-.uploadModal-2ie9O_ .icon-HW4tZ-.webcode-18ObW7::after
-{
-	-webkit-mask: url(https://mwittrien.github.io/BetterDiscordAddons/Themes/_res/svgs/blurple/files_webcode_accent.svg) center/contain no-repeat;
-}
-
-.filenameLinkWrapper-3Rc6sk,
-a.fileNameLink-1odyIc,
-a.metadataName-1KMZtB
-{
-	color: #bd3a3a;
+.scrollerContent__36d07 {
+	margin-bottom: 8px;
 }
