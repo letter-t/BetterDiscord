@@ -9,36 +9,86 @@ by t
  Email: tosiq25@gmail.com
 */
 
-@keyframes unread {  
-	0% { background-color: rgba(194,5,3,0.8); }
-	50% { background-color: rgba(194,5,3,0.3); }
+@keyframes unread {
+	0% {
+		background-color: rgba(194, 5, 3, 0.8);
+	}
+
+	50% {
+		background-color: rgba(194, 5, 3, 0.3);
+	}
 }
+
 @keyframes speaking {
-	0% { box-shadow: 0 0 0 3px #ca1c1c, inset 0 0 0 0px #ca1c1c; }
-	50% { box-shadow: 0 0 0 3px #401c1c, inset 0 0 0 0px #401c1c; }
-	100% { box-shadow: 0 0 0 3px #ca1c1c, inset 0 0 0 0px #ca1c1c; }
+	0% {
+		box-shadow: 0 0 0 3px #ca1c1c, inset 0 0 0 0px #ca1c1c;
+	}
+
+	50% {
+		box-shadow: 0 0 0 3px #401c1c, inset 0 0 0 0px #401c1c;
+	}
+
+	100% {
+		box-shadow: 0 0 0 3px #ca1c1c, inset 0 0 0 0px #ca1c1c;
+	}
 }
+
 @keyframes speaking2 {
-	0% { box-shadow: inset 0 0 0 3px #ca1c1c, inset 0 0 0 4px var(--background-secondary); }
-	50% { box-shadow: inset 0 0 0 3px #820d0d, inset 0 0 0 4px var(--background-secondary); }
-	100% { box-shadow: inset 0 0 0 3px #ca1c1c, inset 0 0 0 4px var(--background-secondary); }
+	0% {
+		box-shadow: inset 0 0 0 3px #ca1c1c, inset 0 0 0 4px var(--background-secondary);
+	}
+
+	50% {
+		box-shadow: inset 0 0 0 3px #820d0d, inset 0 0 0 4px var(--background-secondary);
+	}
+
+	100% {
+		box-shadow: inset 0 0 0 3px #ca1c1c, inset 0 0 0 4px var(--background-secondary);
+	}
 }
-@keyframes background {  
-	0% { background-color: #1e1e1e; }
-	33% { background-color: #38d753; }
-	77% { background-color: #c20503; }
+
+@keyframes background {
+	0% {
+		background-color: #1e1e1e;
+	}
+
+	33% {
+		background-color: #38d753;
+	}
+
+	77% {
+		background-color: #c20503;
+	}
 }
+
 @keyframes test {
-	0%{color: #ffffff}
-	50%{color: #a0a0a0}
+	0% {
+		color: #ffffff
+	}
+
+	50% {
+		color: #a0a0a0
+	}
 }
+
 @keyframes slide-to-right {
-	0%{background-position: 100% 0}
-	100%{background-position: 0 0}
+	0% {
+		background-position: 100% 0
+	}
+
+	100% {
+		background-position: 0 0
+	}
 }
+
 @keyframes reaction-outline {
-	0% { box-shadow: 0 0 0 3px rgba(255, 0, 0, 0.3); }
-	100% { box-shadow: 0 0 0 3px rgba(255, 0, 0, 0); }
+	0% {
+		box-shadow: 0 0 0 3px rgba(255, 0, 0, 0.3);
+	}
+
+	100% {
+		box-shadow: 0 0 0 3px rgba(255, 0, 0, 0);
+	}
 }
 
 .theme-light,
@@ -48,8 +98,7 @@ by t
 .visual-refresh.theme-light,
 .visual-refresh.theme-dark,
 .visual-refresh.theme-darker,
-.visual-refresh.theme-midnight
-{
+.visual-refresh.theme-midnight {
 	--header-primary: #fff;
 	--header-secondary: #bbbbbb;
 	--text-normal: #dcddde;
@@ -71,6 +120,7 @@ by t
 	--background-surface-high: #161616 !important;
 	--background-surface-higher: #1a1a1a !important;
 	--background-surface-highest: #212121 !important;
+	--app-background-frame: #1a1a1a !important;
 	--bg-surface-overlay: #1a1a1a;
 
 	--chat-background-default: #1a1a1a;
@@ -78,6 +128,8 @@ by t
 	--background-code: #191919;
 	--spoiler-hidden-background: #212121;
 	--spoiler-hidden-background-hover: #2f2f2f;
+	--card-primary-bg: #1a1a1a;
+	--button-secondary-background: #292929;
 
 	--background-primary: #121212;
 	--background-secondary: #161616;
@@ -88,43 +140,43 @@ by t
 	--background-mobile-primary: #292929;
 	--background-mobile-secondary: #2f2f2f;
 	--background-mobile-header: #323232;
-	--background-modifier-hover: rgba(80,80,80,0.16);
-	--background-modifier-active: rgba(80,80,80,0.24);
- 	--background-modifier-selected: rgba(80,80,80,0.32);
-	--background-modifier-accent: hsla(0,0%,100%,0.06);
-	--background-message-hover: rgba(4,4,4,0.12);
+	--background-modifier-hover: rgba(80, 80, 80, 0.16);
+	--background-modifier-active: rgba(80, 80, 80, 0.24);
+	--background-modifier-selected: rgba(80, 80, 80, 0.32);
+	--background-modifier-accent: hsla(0, 0%, 100%, 0.06);
+	--background-message-hover: rgba(4, 4, 4, 0.12);
 	--scrollbar-thin-thumb: #212121;
 	--scrollbar-auto-thumb: #2f2f2f;
 	--scrollbar-auto-track: #212121;
 	--scrollbar-auto-scrollbar-color-thumb: #2f2f2f;
 	--scrollbar-auto-scrollbar-color-track: #212121;
-	--elevation-low: 0 1px 0 rgba(4,4,4,0.2),0 1.5px 0 rgba(6,6,6,0.05),0 2px 0 rgba(4,4,4,0.05);
-	--elevation-high: 0 8px 16px rgba(0,0,0,0.24);
+	--elevation-low: 0 1px 0 rgba(4, 4, 4, 0.2), 0 1.5px 0 rgba(6, 6, 6, 0.05), 0 2px 0 rgba(4, 4, 4, 0.05);
+	--elevation-high: 0 8px 16px rgba(0, 0, 0, 0.24);
 	--logo-primary: #fff;
-	--guild-header-text-shadow: 0 1px 1px rgba(0,0,0,0.4);
+	--guild-header-text-shadow: 0 1px 1px rgba(0, 0, 0, 0.4);
 	--channeltextarea-background: #1a1a1a;
 	--activity-card-background: #161616;
 	--textbox-markdown-syntax: #929292;
 	--deprecated-panel-background: #2b2b2b;
-	--deprecated-card-bg: rgba(34,34,34,0.6);
-	--deprecated-card-editable-bg: rgba(34,34,34,0.3);
+	--deprecated-card-bg: rgba(34, 34, 34, 0.6);
+	--deprecated-card-editable-bg: rgba(34, 34, 34, 0.3);
 	--deprecated-store-bg: #292929;
 	--deprecated-quickswitcher-input-background: #7b7b7b;
 	--deprecated-quickswitcher-input-placeholder: hsla(0, 0%, 0%, 0.3);
-	--deprecated-text-input-bg: rgba(0,0,0,0.1);
-	--deprecated-text-input-border: rgba(0,0,0,0.3);
+	--deprecated-text-input-bg: rgba(0, 0, 0, 0.1);
+	--deprecated-text-input-border: rgba(0, 0, 0, 0.3);
 	--deprecated-text-input-border-hover: #040404;
 	--deprecated-text-input-border-disabled: #161616;
 	--deprecated-text-input-prefix: #dcddde;
-	--background-mentioned: rgba(230,39,39,0.2);
-	--background-mentioned-hover: rgba(160,39,39,0.2);
-	--brand-experiment-05a: rgba(230,39,39,0.2);
-	--brand-experiment-10a: rgba(160,39,39,0.2);
+	--background-mentioned: rgba(230, 39, 39, 0.2);
+	--background-mentioned-hover: rgba(160, 39, 39, 0.2);
+	--brand-experiment-05a: rgba(230, 39, 39, 0.2);
+	--brand-experiment-10a: rgba(160, 39, 39, 0.2);
 	--brand-experiment: var(--red-500) !important;
 	--brand-experiment-560: #ff0000 !important;
 	--brand-experiment-600: #ff0000 !important;
 	--background-accent: #292929;
-	
+
 	--accentcolor-1: var(--red-460);
 	--accentcolor-2: var(--red-430);
 	--accentcolor-3: #aaa;
@@ -159,34 +211,61 @@ by t
 	--brand-830-hsl: 0 calc(var(--saturation-factor, 1)*47.4%) 14.9%;
 	--brand-860-hsl: 0 calc(var(--saturation-factor, 1)*46.9%) 09.6%;
 	--brand-900-hsl: 0 calc(var(--saturation-factor, 1)*50.0%) 03.1%;
-	
-	--primary-100-hsl: 0 0% 97.6%; /* 97.6 */
-	--primary-130-hsl: 0 0% 95.5%; /* 95.5 */
-	--primary-160-hsl: 0 0% 92.9%; /* 92.9 */
-	--primary-200-hsl: 0 0% 90%;   /* 90 */
-	--primary-230-hsl: 0 0% 87.1%; /* 87.1 */
-	--primary-260-hsl: 0 0% 83.7%; /* 83.7 */
-	--primary-300-hsl: 0 0% 78.8%; /* 78.8 */
-	--primary-330-hsl: 0 0% 73.3%; /* 73.3 */
-	--primary-345-hsl: 0 0% 67.5%; /* 67.5 */
-	--primary-360-hsl: 0 0% 61.2%; /* 61.2 */
-	--primary-400-hsl: 0 0% 52.9%; /* 52.9 */
-	--primary-430-hsl: 0 0% 44.9%; /* 44.9 */
-	--primary-460-hsl: 0 0% 38%;   /* 38 */
-	--primary-500-hsl: 0 0% 32.5%; /* 32.5 */
-	--primary-530-hsl: 0 0% 19.7%; /* 27.3 */
-	--primary-560-hsl: 0 0% 17%;   /* 23.5 */
-	--primary-600-hsl: 0 0% 14.9%; /* 20.6 */
-	--primary-630-hsl: 0 0% 13%;   /* 18 */
-	--primary-645-hsl: 0 0% 12%;   /* 16.9 */
-	--primary-660-hsl: 0 0% 10.6%; /* 14.7 */
-	--primary-700-hsl: 0 0% 9%;    /* 12.5 */
-	--primary-730-hsl: 0 0% 7.9%;  /* 11 */
-	--primary-760-hsl: 0 0% 6.6%;  /* 9.2 */
-	--primary-800-hsl: 0 0% 5.3%;  /* 7.3 */
-	--primary-830-hsl: 0 0% 3.5%;  /* 4.9 */
-	--primary-860-hsl: 0 0% 1.8%;  /* 2.5 */
-	--primary-900-hsl: 0 0% 0.6%;  /* 0.8 */
+
+	--primary-100-hsl: 0 0% 97.6%;
+	/* 97.6 */
+	--primary-130-hsl: 0 0% 95.5%;
+	/* 95.5 */
+	--primary-160-hsl: 0 0% 92.9%;
+	/* 92.9 */
+	--primary-200-hsl: 0 0% 90%;
+	/* 90 */
+	--primary-230-hsl: 0 0% 87.1%;
+	/* 87.1 */
+	--primary-260-hsl: 0 0% 83.7%;
+	/* 83.7 */
+	--primary-300-hsl: 0 0% 78.8%;
+	/* 78.8 */
+	--primary-330-hsl: 0 0% 73.3%;
+	/* 73.3 */
+	--primary-345-hsl: 0 0% 67.5%;
+	/* 67.5 */
+	--primary-360-hsl: 0 0% 61.2%;
+	/* 61.2 */
+	--primary-400-hsl: 0 0% 52.9%;
+	/* 52.9 */
+	--primary-430-hsl: 0 0% 44.9%;
+	/* 44.9 */
+	--primary-460-hsl: 0 0% 38%;
+	/* 38 */
+	--primary-500-hsl: 0 0% 32.5%;
+	/* 32.5 */
+	--primary-530-hsl: 0 0% 19.7%;
+	/* 27.3 */
+	--primary-560-hsl: 0 0% 17%;
+	/* 23.5 */
+	--primary-600-hsl: 0 0% 14.9%;
+	/* 20.6 */
+	--primary-630-hsl: 0 0% 13%;
+	/* 18 */
+	--primary-645-hsl: 0 0% 12%;
+	/* 16.9 */
+	--primary-660-hsl: 0 0% 10.6%;
+	/* 14.7 */
+	--primary-700-hsl: 0 0% 9%;
+	/* 12.5 */
+	--primary-730-hsl: 0 0% 7.9%;
+	/* 11 */
+	--primary-760-hsl: 0 0% 6.6%;
+	/* 9.2 */
+	--primary-800-hsl: 0 0% 5.3%;
+	/* 7.3 */
+	--primary-830-hsl: 0 0% 3.5%;
+	/* 4.9 */
+	--primary-860-hsl: 0 0% 1.8%;
+	/* 2.5 */
+	--primary-900-hsl: 0 0% 0.6%;
+	/* 0.8 */
 
 	/* why did they add so MANY */
 	--blurple-1: hsl(0 calc(1*100%) 95.294% /1);
@@ -229,172 +308,172 @@ by t
 	--blurple-19-hsl: 0 calc(var(--saturation-factor, 1)* 100%) 83.137%;
 	--blurple-20: hsl(0 calc(1*100%) 82.549% /1);
 	--blurple-20-hsl: 0 calc(var(--saturation-factor, 1)* 100%) 82.549%;
-    --blurple-21: hsl(0 calc(1*97.849%) 81.765% /1);
-    --blurple-21-hsl: 0 calc(var(--saturation-factor, 1)* 97.849%) 81.765%;
-    --blurple-22: hsl(0 calc(1*97.938%) 80.98% /1);
-    --blurple-22-hsl: 0 calc(var(--saturation-factor, 1)* 97.938%) 80.98%;
-    --blurple-23: hsl(0 calc(1*98%) 80.392% /1);
-    --blurple-23-hsl: 0 calc(var(--saturation-factor, 1)* 98%) 80.392%;
-    --blurple-24: hsl(0 calc(1*96.154%) 79.608% /1);
-    --blurple-24-hsl: 0 calc(var(--saturation-factor, 1)* 96.154%) 79.608%;
-    --blurple-25: hsl(0 calc(1*96.262%) 79.02% /1);
-    --blurple-25-hsl: 0 calc(var(--saturation-factor, 1)* 96.262%) 79.02%;
-    --blurple-26: hsl(0 calc(1*96.364%) 78.431% /1);
-    --blurple-26-hsl: 0 calc(var(--saturation-factor, 1)* 96.364%) 78.431%;
-    --blurple-27: hsl(0 calc(1*94.737%) 77.647% /1);
-    --blurple-27-hsl: 0 calc(var(--saturation-factor, 1)* 94.737%) 77.647%;
-    --blurple-28: hsl(0 calc(1*94.872%) 77.059% /1);
-    --blurple-28-hsl: 0 calc(var(--saturation-factor, 1)* 94.872%) 77.059%;
-    --blurple-29: hsl(0 calc(1*93.333%) 76.471% /1);
-    --blurple-29-hsl: 0 calc(var(--saturation-factor, 1)* 93.333%) 76.471%;
-    --blurple-30: hsl(0 calc(1*93.496%) 75.882% /1);
-    --blurple-30-hsl: 0 calc(var(--saturation-factor, 1)* 93.496%) 75.882%;
-    --blurple-31: hsl(0 calc(1*93.651%) 75.294% /1);
-    --blurple-31-hsl: 0 calc(var(--saturation-factor, 1)* 93.651%) 75.294%;
-    --blurple-32: hsl(0 calc(1*92.308%) 74.51% /1);
-    --blurple-32-hsl: 0 calc(var(--saturation-factor, 1)* 92.308%) 74.51%;
-    --blurple-33: hsl(0 calc(1*92.481%) 73.922% /1);
-    --blurple-33-hsl: 0 calc(var(--saturation-factor, 1)* 92.481%) 73.922%;
-    --blurple-34: hsl(0 calc(1*91.176%) 73.333% /1);
-    --blurple-34-hsl: 0 calc(var(--saturation-factor, 1)* 91.176%) 73.333%;
-    --blurple-35: hsl(0 calc(1*91.367%) 72.745% /1);
-    --blurple-35-hsl: 0 calc(var(--saturation-factor, 1)* 91.367%) 72.745%;
-    --blurple-36: hsl(0 calc(1*90.21%) 71.961% /1);
-    --blurple-36-hsl: 0 calc(var(--saturation-factor, 1)* 90.21%) 71.961%;
-    --blurple-37: hsl(0 calc(1*90.345%) 71.569% /1);
-    --blurple-37-hsl: 0 calc(var(--saturation-factor, 1)* 90.345%) 71.569%;
-    --blurple-38: hsl(0 calc(1*89.262%) 70.784% /1);
-    --blurple-38-hsl: 0 calc(var(--saturation-factor, 1)* 89.262%) 70.784%;
-    --blurple-39: hsl(0 calc(1*89.474%) 70.196% /1);
-    --blurple-39-hsl: 0 calc(var(--saturation-factor, 1)* 89.474%) 70.196%;
-    --blurple-40: hsl(0 calc(1*88.387%) 69.608% /1);
-    --blurple-40-hsl: 0 calc(var(--saturation-factor, 1)* 88.387%) 69.608%;
-    --blurple-41: hsl(0 calc(1*88.608%) 69.02% /1);
-    --blurple-41-hsl: 0 calc(var(--saturation-factor, 1)* 88.608%) 69.02%;
-    --blurple-42: hsl(0 calc(1*87.578%) 68.431% /1);
-    --blurple-42-hsl: 0 calc(var(--saturation-factor, 1)* 87.578%) 68.431%;
-    --blurple-43: hsl(0 calc(1*87.73%) 68.039% /1);
-    --blurple-43-hsl: 0 calc(var(--saturation-factor, 1)* 87.73%) 68.039%;
-    --blurple-44: hsl(0 calc(1*86.826%) 67.255% /1);
-    --blurple-44-hsl: 0 calc(var(--saturation-factor, 1)* 86.826%) 67.255%;
-    --blurple-45: hsl(0 calc(1*86.982%) 66.863% /1);
-    --blurple-45-hsl: 0 calc(var(--saturation-factor, 1)* 86.982%) 66.863%;
-    --blurple-46: hsl(0 calc(1*86.047%) 66.275% /1);
-    --blurple-46-hsl: 0 calc(var(--saturation-factor, 1)* 86.047%) 66.275%;
-    --blurple-47: hsl(0 calc(1*86.286%) 65.686% /1);
-    --blurple-47-hsl: 0 calc(var(--saturation-factor, 1)* 86.286%) 65.686%;
-    --blurple-48: hsl(0 calc(1*85.393%) 65.098% /1);
-    --blurple-48-hsl: 0 calc(var(--saturation-factor, 1)* 85.393%) 65.098%;
-    --blurple-49: hsl(0 calc(1*85.556%) 64.706% /1);
-    --blurple-49-hsl: 0 calc(var(--saturation-factor, 1)* 85.556%) 64.706%;
-    --blurple-50: hsl(0 calc(1*85.556%) 64.706% /1);
-    --blurple-50-hsl: 0 calc(var(--saturation-factor, 1)* 85.556%) 64.706%;
-    --blurple-51: hsl(0 calc(1*79.787%) 63.137% /1);
-    --blurple-51-hsl: 0 calc(var(--saturation-factor, 1)* 79.787%) 63.137%;
-    --blurple-52: hsl(0 calc(1*74.49%) 61.569% /1);
-    --blurple-52-hsl: 0 calc(var(--saturation-factor, 1)* 74.49%) 61.569%;
-    --blurple-53: hsl(0 calc(1*69.608%) 60% /1);
-    --blurple-53-hsl: 0 calc(var(--saturation-factor, 1)* 69.608%) 60%;
-    --blurple-54: hsl(0 calc(1*65.877%) 58.627% /1);
-    --blurple-54-hsl: 0 calc(var(--saturation-factor, 1)* 65.877%) 58.627%;
-    --blurple-55: hsl(0 calc(1*61.644%) 57.059% /1);
-    --blurple-55-hsl: 0 calc(var(--saturation-factor, 1)* 61.644%) 57.059%;
-    --blurple-56: hsl(0 calc(1*58.407%) 55.686% /1);
-    --blurple-56-hsl: 0 calc(var(--saturation-factor, 1)* 58.407%) 55.686%;
-    --blurple-57: hsl(0 calc(1*55.365%) 54.314% /1);
-    --blurple-57-hsl: 0 calc(var(--saturation-factor, 1)* 55.365%) 54.314%;
-    --blurple-58: hsl(0 calc(1*52.5%) 52.941% /1);
-    --blurple-58-hsl: 0 calc(var(--saturation-factor, 1)* 52.5%) 52.941%;
-    --blurple-59: hsl(0 calc(1*49.194%) 51.373% /1);
-    --blurple-59-hsl: 0 calc(var(--saturation-factor, 1)* 49.194%) 51.373%;
-    --blurple-60: hsl(0 calc(1*46.667%) 50% /1);
-    --blurple-60-hsl: 0 calc(var(--saturation-factor, 1)* 46.667%) 50%;
-    --blurple-61: hsl(0 calc(1*46.774%) 48.627% /1);
-    --blurple-61-hsl: 0 calc(var(--saturation-factor, 1)* 46.774%) 48.627%;
-    --blurple-62: hsl(0 calc(1*47.107%) 47.451% /1);
-    --blurple-62-hsl: 0 calc(var(--saturation-factor, 1)* 47.107%) 47.451%;
-    --blurple-63: hsl(0 calc(1*47.234%) 46.078% /1);
-    --blurple-63-hsl: 0 calc(var(--saturation-factor, 1)* 47.234%) 46.078%;
-    --blurple-64: hsl(0 calc(1*47.368%) 44.706% /1);
-    --blurple-64-hsl: 0 calc(var(--saturation-factor, 1)* 47.368%) 44.706%;
-    --blurple-65: hsl(0 calc(1*47.511%) 43.333% /1);
-    --blurple-65-hsl: 0 calc(var(--saturation-factor, 1)* 47.511%) 43.333%;
-    --blurple-66: hsl(0 calc(1*47.907%) 42.157% /1);
-    --blurple-66-hsl: 0 calc(var(--saturation-factor, 1)* 47.907%) 42.157%;
-    --blurple-67: hsl(0 calc(1*48.077%) 40.784% /1);
-    --blurple-67-hsl: 0 calc(var(--saturation-factor, 1)* 48.077%) 40.784%;
-    --blurple-68: hsl(0 calc(1*48.515%) 39.608% /1);
-    --blurple-68-hsl: 0 calc(var(--saturation-factor, 1)* 48.515%) 39.608%;
-    --blurple-69: hsl(0 calc(1*48.718%) 38.235% /1);
-    --blurple-69-hsl: 0 calc(var(--saturation-factor, 1)* 48.718%) 38.235%;
-    --blurple-70: hsl(0 calc(1*49.206%) 37.059% /1);
-    --blurple-70-hsl: 0 calc(var(--saturation-factor, 1)* 49.206%) 37.059%;
-    --blurple-71: hsl(0 calc(1*49.727%) 35.882% /1);
-    --blurple-71-hsl: 0 calc(var(--saturation-factor, 1)* 49.727%) 35.882%;
-    --blurple-72: hsl(0 calc(1*50%) 34.51% /1);
-    --blurple-72-hsl: 0 calc(var(--saturation-factor, 1)* 50%) 34.51%;
-    --blurple-73: hsl(0 calc(1*50.588%) 33.333% /1);
-    --blurple-73-hsl: 0 calc(var(--saturation-factor, 1)* 50.588%) 33.333%;
-    --blurple-74: hsl(0 calc(1*51.22%) 32.157% /1);
-    --blurple-74-hsl: 0 calc(var(--saturation-factor, 1)* 51.22%) 32.157%;
-    --blurple-75: hsl(0 calc(1*50.943%) 31.176% /1);
-    --blurple-75-hsl: 0 calc(var(--saturation-factor, 1)* 50.943%) 31.176%;
-    --blurple-76: hsl(0 calc(1*51.316%) 29.804% /1);
-    --blurple-76-hsl: 0 calc(var(--saturation-factor, 1)* 51.316%) 29.804%;
-    --blurple-77: hsl(0 calc(1*52.055%) 28.627% /1);
-    --blurple-77-hsl: 0 calc(var(--saturation-factor, 1)* 52.055%) 28.627%;
-    --blurple-78: hsl(0 calc(1*52.857%) 27.451% /1);
-    --blurple-78-hsl: 0 calc(var(--saturation-factor, 1)* 52.857%) 27.451%;
-    --blurple-79: hsl(0 calc(1*53.731%) 26.275% /1);
-    --blurple-79-hsl: 0 calc(var(--saturation-factor, 1)* 53.731%) 26.275%;
-    --blurple-80: hsl(0 calc(1*54.688%) 25.098% /1);
-    --blurple-80-hsl: 0 calc(var(--saturation-factor, 1)* 54.688%) 25.098%;
-    --blurple-81: hsl(0 calc(1*54.472%) 24.118% /1);
-    --blurple-81-hsl: 0 calc(var(--saturation-factor, 1)* 54.472%) 24.118%;
-    --blurple-82: hsl(0 calc(1*55.556%) 22.941% /1);
-    --blurple-82-hsl: 0 calc(var(--saturation-factor, 1)* 55.556%) 22.941%;
-    --blurple-83: hsl(0 calc(1*57.143%) 21.961% /1);
-    --blurple-83-hsl: 0 calc(var(--saturation-factor, 1)* 57.143%) 21.961%;
-    --blurple-84: hsl(0 calc(1*57.009%) 20.98% /1);
-    --blurple-84-hsl: 0 calc(var(--saturation-factor, 1)* 57.009%) 20.98%;
-    --blurple-85: hsl(0 calc(1*58.416%) 19.804% /1);
-    --blurple-85-hsl: 0 calc(var(--saturation-factor, 1)* 58.416%) 19.804%;
-    --blurple-86: hsl(0 calc(1*60%) 18.627% /1);
-    --blurple-86-hsl: 0 calc(var(--saturation-factor, 1)* 60%) 18.627%;
-    --blurple-87: hsl(0 calc(1*60%) 17.647% /1);
-    --blurple-87-hsl: 0 calc(var(--saturation-factor, 1)* 60%) 17.647%;
-    --blurple-88: hsl(0 calc(1*62.353%) 16.667% /1);
-    --blurple-88-hsl: 0 calc(var(--saturation-factor, 1)* 62.353%) 16.667%;
-    --blurple-89: hsl(0 calc(1*62.5%) 15.686% /1);
-    --blurple-89-hsl: 0 calc(var(--saturation-factor, 1)* 62.5%) 15.686%;
-    --blurple-90: hsl(0 calc(1*64.865%) 14.51% /1);
-    --blurple-90-hsl: 0 calc(var(--saturation-factor, 1)* 64.865%) 14.51%;
-    --blurple-91: hsl(0 calc(1*65.714%) 13.725% /1);
-    --blurple-91-hsl: 0 calc(var(--saturation-factor, 1)* 65.714%) 13.725%;
-    --blurple-92: hsl(0 calc(1*68.75%) 12.549% /1);
-    --blurple-92-hsl: 0 calc(var(--saturation-factor, 1)* 68.75%) 12.549%;
-    --blurple-93: hsl(0 calc(1*69.492%) 11.569% /1);
-    --blurple-93-hsl: 0 calc(var(--saturation-factor, 1)* 69.492%) 11.569%;
-    --blurple-94: hsl(0 calc(1*73.585%) 10.392% /1);
-    --blurple-94-hsl: 0 calc(var(--saturation-factor, 1)* 73.585%) 10.392%;
-    --blurple-95: hsl(0 calc(1*74.468%) 9.216% /1);
-    --blurple-95-hsl: 0 calc(var(--saturation-factor, 1)* 74.468%) 9.216%;
-    --blurple-96: hsl(0 calc(1*75.61%) 8.039% /1);
-    --blurple-96-hsl: 0 calc(var(--saturation-factor, 1)* 75.61%) 8.039%;
-    --blurple-97: hsl(0 calc(1*76.471%) 6.667% /1);
-    --blurple-97-hsl: 0 calc(var(--saturation-factor, 1)* 76.471%) 6.667%;
-    --blurple-98: hsl(0 calc(1*76%) 4.902% /1);
-    --blurple-98-hsl: 0 calc(var(--saturation-factor, 1)* 76%) 4.902%;
-    --blurple-99: hsl(0 calc(1*84.615%) 2.549% /1);
-    --blurple-99-hsl: 0 calc(var(--saturation-factor, 1)* 84.615%) 2.549%;
-    --blurple-100: hsl(0 calc(1*0%) 0% /1);
-    --blurple-100-hsl: 0 calc(var(--saturation-factor, 1)* 0%) 0%;
+	--blurple-21: hsl(0 calc(1*97.849%) 81.765% /1);
+	--blurple-21-hsl: 0 calc(var(--saturation-factor, 1)* 97.849%) 81.765%;
+	--blurple-22: hsl(0 calc(1*97.938%) 80.98% /1);
+	--blurple-22-hsl: 0 calc(var(--saturation-factor, 1)* 97.938%) 80.98%;
+	--blurple-23: hsl(0 calc(1*98%) 80.392% /1);
+	--blurple-23-hsl: 0 calc(var(--saturation-factor, 1)* 98%) 80.392%;
+	--blurple-24: hsl(0 calc(1*96.154%) 79.608% /1);
+	--blurple-24-hsl: 0 calc(var(--saturation-factor, 1)* 96.154%) 79.608%;
+	--blurple-25: hsl(0 calc(1*96.262%) 79.02% /1);
+	--blurple-25-hsl: 0 calc(var(--saturation-factor, 1)* 96.262%) 79.02%;
+	--blurple-26: hsl(0 calc(1*96.364%) 78.431% /1);
+	--blurple-26-hsl: 0 calc(var(--saturation-factor, 1)* 96.364%) 78.431%;
+	--blurple-27: hsl(0 calc(1*94.737%) 77.647% /1);
+	--blurple-27-hsl: 0 calc(var(--saturation-factor, 1)* 94.737%) 77.647%;
+	--blurple-28: hsl(0 calc(1*94.872%) 77.059% /1);
+	--blurple-28-hsl: 0 calc(var(--saturation-factor, 1)* 94.872%) 77.059%;
+	--blurple-29: hsl(0 calc(1*93.333%) 76.471% /1);
+	--blurple-29-hsl: 0 calc(var(--saturation-factor, 1)* 93.333%) 76.471%;
+	--blurple-30: hsl(0 calc(1*93.496%) 75.882% /1);
+	--blurple-30-hsl: 0 calc(var(--saturation-factor, 1)* 93.496%) 75.882%;
+	--blurple-31: hsl(0 calc(1*93.651%) 75.294% /1);
+	--blurple-31-hsl: 0 calc(var(--saturation-factor, 1)* 93.651%) 75.294%;
+	--blurple-32: hsl(0 calc(1*92.308%) 74.51% /1);
+	--blurple-32-hsl: 0 calc(var(--saturation-factor, 1)* 92.308%) 74.51%;
+	--blurple-33: hsl(0 calc(1*92.481%) 73.922% /1);
+	--blurple-33-hsl: 0 calc(var(--saturation-factor, 1)* 92.481%) 73.922%;
+	--blurple-34: hsl(0 calc(1*91.176%) 73.333% /1);
+	--blurple-34-hsl: 0 calc(var(--saturation-factor, 1)* 91.176%) 73.333%;
+	--blurple-35: hsl(0 calc(1*91.367%) 72.745% /1);
+	--blurple-35-hsl: 0 calc(var(--saturation-factor, 1)* 91.367%) 72.745%;
+	--blurple-36: hsl(0 calc(1*90.21%) 71.961% /1);
+	--blurple-36-hsl: 0 calc(var(--saturation-factor, 1)* 90.21%) 71.961%;
+	--blurple-37: hsl(0 calc(1*90.345%) 71.569% /1);
+	--blurple-37-hsl: 0 calc(var(--saturation-factor, 1)* 90.345%) 71.569%;
+	--blurple-38: hsl(0 calc(1*89.262%) 70.784% /1);
+	--blurple-38-hsl: 0 calc(var(--saturation-factor, 1)* 89.262%) 70.784%;
+	--blurple-39: hsl(0 calc(1*89.474%) 70.196% /1);
+	--blurple-39-hsl: 0 calc(var(--saturation-factor, 1)* 89.474%) 70.196%;
+	--blurple-40: hsl(0 calc(1*88.387%) 69.608% /1);
+	--blurple-40-hsl: 0 calc(var(--saturation-factor, 1)* 88.387%) 69.608%;
+	--blurple-41: hsl(0 calc(1*88.608%) 69.02% /1);
+	--blurple-41-hsl: 0 calc(var(--saturation-factor, 1)* 88.608%) 69.02%;
+	--blurple-42: hsl(0 calc(1*87.578%) 68.431% /1);
+	--blurple-42-hsl: 0 calc(var(--saturation-factor, 1)* 87.578%) 68.431%;
+	--blurple-43: hsl(0 calc(1*87.73%) 68.039% /1);
+	--blurple-43-hsl: 0 calc(var(--saturation-factor, 1)* 87.73%) 68.039%;
+	--blurple-44: hsl(0 calc(1*86.826%) 67.255% /1);
+	--blurple-44-hsl: 0 calc(var(--saturation-factor, 1)* 86.826%) 67.255%;
+	--blurple-45: hsl(0 calc(1*86.982%) 66.863% /1);
+	--blurple-45-hsl: 0 calc(var(--saturation-factor, 1)* 86.982%) 66.863%;
+	--blurple-46: hsl(0 calc(1*86.047%) 66.275% /1);
+	--blurple-46-hsl: 0 calc(var(--saturation-factor, 1)* 86.047%) 66.275%;
+	--blurple-47: hsl(0 calc(1*86.286%) 65.686% /1);
+	--blurple-47-hsl: 0 calc(var(--saturation-factor, 1)* 86.286%) 65.686%;
+	--blurple-48: hsl(0 calc(1*85.393%) 65.098% /1);
+	--blurple-48-hsl: 0 calc(var(--saturation-factor, 1)* 85.393%) 65.098%;
+	--blurple-49: hsl(0 calc(1*85.556%) 64.706% /1);
+	--blurple-49-hsl: 0 calc(var(--saturation-factor, 1)* 85.556%) 64.706%;
+	--blurple-50: hsl(0 calc(1*85.556%) 64.706% /1);
+	--blurple-50-hsl: 0 calc(var(--saturation-factor, 1)* 85.556%) 64.706%;
+	--blurple-51: hsl(0 calc(1*79.787%) 63.137% /1);
+	--blurple-51-hsl: 0 calc(var(--saturation-factor, 1)* 79.787%) 63.137%;
+	--blurple-52: hsl(0 calc(1*74.49%) 61.569% /1);
+	--blurple-52-hsl: 0 calc(var(--saturation-factor, 1)* 74.49%) 61.569%;
+	--blurple-53: hsl(0 calc(1*69.608%) 60% /1);
+	--blurple-53-hsl: 0 calc(var(--saturation-factor, 1)* 69.608%) 60%;
+	--blurple-54: hsl(0 calc(1*65.877%) 58.627% /1);
+	--blurple-54-hsl: 0 calc(var(--saturation-factor, 1)* 65.877%) 58.627%;
+	--blurple-55: hsl(0 calc(1*61.644%) 57.059% /1);
+	--blurple-55-hsl: 0 calc(var(--saturation-factor, 1)* 61.644%) 57.059%;
+	--blurple-56: hsl(0 calc(1*58.407%) 55.686% /1);
+	--blurple-56-hsl: 0 calc(var(--saturation-factor, 1)* 58.407%) 55.686%;
+	--blurple-57: hsl(0 calc(1*55.365%) 54.314% /1);
+	--blurple-57-hsl: 0 calc(var(--saturation-factor, 1)* 55.365%) 54.314%;
+	--blurple-58: hsl(0 calc(1*52.5%) 52.941% /1);
+	--blurple-58-hsl: 0 calc(var(--saturation-factor, 1)* 52.5%) 52.941%;
+	--blurple-59: hsl(0 calc(1*49.194%) 51.373% /1);
+	--blurple-59-hsl: 0 calc(var(--saturation-factor, 1)* 49.194%) 51.373%;
+	--blurple-60: hsl(0 calc(1*46.667%) 50% /1);
+	--blurple-60-hsl: 0 calc(var(--saturation-factor, 1)* 46.667%) 50%;
+	--blurple-61: hsl(0 calc(1*46.774%) 48.627% /1);
+	--blurple-61-hsl: 0 calc(var(--saturation-factor, 1)* 46.774%) 48.627%;
+	--blurple-62: hsl(0 calc(1*47.107%) 47.451% /1);
+	--blurple-62-hsl: 0 calc(var(--saturation-factor, 1)* 47.107%) 47.451%;
+	--blurple-63: hsl(0 calc(1*47.234%) 46.078% /1);
+	--blurple-63-hsl: 0 calc(var(--saturation-factor, 1)* 47.234%) 46.078%;
+	--blurple-64: hsl(0 calc(1*47.368%) 44.706% /1);
+	--blurple-64-hsl: 0 calc(var(--saturation-factor, 1)* 47.368%) 44.706%;
+	--blurple-65: hsl(0 calc(1*47.511%) 43.333% /1);
+	--blurple-65-hsl: 0 calc(var(--saturation-factor, 1)* 47.511%) 43.333%;
+	--blurple-66: hsl(0 calc(1*47.907%) 42.157% /1);
+	--blurple-66-hsl: 0 calc(var(--saturation-factor, 1)* 47.907%) 42.157%;
+	--blurple-67: hsl(0 calc(1*48.077%) 40.784% /1);
+	--blurple-67-hsl: 0 calc(var(--saturation-factor, 1)* 48.077%) 40.784%;
+	--blurple-68: hsl(0 calc(1*48.515%) 39.608% /1);
+	--blurple-68-hsl: 0 calc(var(--saturation-factor, 1)* 48.515%) 39.608%;
+	--blurple-69: hsl(0 calc(1*48.718%) 38.235% /1);
+	--blurple-69-hsl: 0 calc(var(--saturation-factor, 1)* 48.718%) 38.235%;
+	--blurple-70: hsl(0 calc(1*49.206%) 37.059% /1);
+	--blurple-70-hsl: 0 calc(var(--saturation-factor, 1)* 49.206%) 37.059%;
+	--blurple-71: hsl(0 calc(1*49.727%) 35.882% /1);
+	--blurple-71-hsl: 0 calc(var(--saturation-factor, 1)* 49.727%) 35.882%;
+	--blurple-72: hsl(0 calc(1*50%) 34.51% /1);
+	--blurple-72-hsl: 0 calc(var(--saturation-factor, 1)* 50%) 34.51%;
+	--blurple-73: hsl(0 calc(1*50.588%) 33.333% /1);
+	--blurple-73-hsl: 0 calc(var(--saturation-factor, 1)* 50.588%) 33.333%;
+	--blurple-74: hsl(0 calc(1*51.22%) 32.157% /1);
+	--blurple-74-hsl: 0 calc(var(--saturation-factor, 1)* 51.22%) 32.157%;
+	--blurple-75: hsl(0 calc(1*50.943%) 31.176% /1);
+	--blurple-75-hsl: 0 calc(var(--saturation-factor, 1)* 50.943%) 31.176%;
+	--blurple-76: hsl(0 calc(1*51.316%) 29.804% /1);
+	--blurple-76-hsl: 0 calc(var(--saturation-factor, 1)* 51.316%) 29.804%;
+	--blurple-77: hsl(0 calc(1*52.055%) 28.627% /1);
+	--blurple-77-hsl: 0 calc(var(--saturation-factor, 1)* 52.055%) 28.627%;
+	--blurple-78: hsl(0 calc(1*52.857%) 27.451% /1);
+	--blurple-78-hsl: 0 calc(var(--saturation-factor, 1)* 52.857%) 27.451%;
+	--blurple-79: hsl(0 calc(1*53.731%) 26.275% /1);
+	--blurple-79-hsl: 0 calc(var(--saturation-factor, 1)* 53.731%) 26.275%;
+	--blurple-80: hsl(0 calc(1*54.688%) 25.098% /1);
+	--blurple-80-hsl: 0 calc(var(--saturation-factor, 1)* 54.688%) 25.098%;
+	--blurple-81: hsl(0 calc(1*54.472%) 24.118% /1);
+	--blurple-81-hsl: 0 calc(var(--saturation-factor, 1)* 54.472%) 24.118%;
+	--blurple-82: hsl(0 calc(1*55.556%) 22.941% /1);
+	--blurple-82-hsl: 0 calc(var(--saturation-factor, 1)* 55.556%) 22.941%;
+	--blurple-83: hsl(0 calc(1*57.143%) 21.961% /1);
+	--blurple-83-hsl: 0 calc(var(--saturation-factor, 1)* 57.143%) 21.961%;
+	--blurple-84: hsl(0 calc(1*57.009%) 20.98% /1);
+	--blurple-84-hsl: 0 calc(var(--saturation-factor, 1)* 57.009%) 20.98%;
+	--blurple-85: hsl(0 calc(1*58.416%) 19.804% /1);
+	--blurple-85-hsl: 0 calc(var(--saturation-factor, 1)* 58.416%) 19.804%;
+	--blurple-86: hsl(0 calc(1*60%) 18.627% /1);
+	--blurple-86-hsl: 0 calc(var(--saturation-factor, 1)* 60%) 18.627%;
+	--blurple-87: hsl(0 calc(1*60%) 17.647% /1);
+	--blurple-87-hsl: 0 calc(var(--saturation-factor, 1)* 60%) 17.647%;
+	--blurple-88: hsl(0 calc(1*62.353%) 16.667% /1);
+	--blurple-88-hsl: 0 calc(var(--saturation-factor, 1)* 62.353%) 16.667%;
+	--blurple-89: hsl(0 calc(1*62.5%) 15.686% /1);
+	--blurple-89-hsl: 0 calc(var(--saturation-factor, 1)* 62.5%) 15.686%;
+	--blurple-90: hsl(0 calc(1*64.865%) 14.51% /1);
+	--blurple-90-hsl: 0 calc(var(--saturation-factor, 1)* 64.865%) 14.51%;
+	--blurple-91: hsl(0 calc(1*65.714%) 13.725% /1);
+	--blurple-91-hsl: 0 calc(var(--saturation-factor, 1)* 65.714%) 13.725%;
+	--blurple-92: hsl(0 calc(1*68.75%) 12.549% /1);
+	--blurple-92-hsl: 0 calc(var(--saturation-factor, 1)* 68.75%) 12.549%;
+	--blurple-93: hsl(0 calc(1*69.492%) 11.569% /1);
+	--blurple-93-hsl: 0 calc(var(--saturation-factor, 1)* 69.492%) 11.569%;
+	--blurple-94: hsl(0 calc(1*73.585%) 10.392% /1);
+	--blurple-94-hsl: 0 calc(var(--saturation-factor, 1)* 73.585%) 10.392%;
+	--blurple-95: hsl(0 calc(1*74.468%) 9.216% /1);
+	--blurple-95-hsl: 0 calc(var(--saturation-factor, 1)* 74.468%) 9.216%;
+	--blurple-96: hsl(0 calc(1*75.61%) 8.039% /1);
+	--blurple-96-hsl: 0 calc(var(--saturation-factor, 1)* 75.61%) 8.039%;
+	--blurple-97: hsl(0 calc(1*76.471%) 6.667% /1);
+	--blurple-97-hsl: 0 calc(var(--saturation-factor, 1)* 76.471%) 6.667%;
+	--blurple-98: hsl(0 calc(1*76%) 4.902% /1);
+	--blurple-98-hsl: 0 calc(var(--saturation-factor, 1)* 76%) 4.902%;
+	--blurple-99: hsl(0 calc(1*84.615%) 2.549% /1);
+	--blurple-99-hsl: 0 calc(var(--saturation-factor, 1)* 84.615%) 2.549%;
+	--blurple-100: hsl(0 calc(1*0%) 0% /1);
+	--blurple-100-hsl: 0 calc(var(--saturation-factor, 1)* 0%) 0%;
 
 	--mention-foreground: #ce1313;
 	--mention-background: rgba(193, 33, 33, 0.14);
-	--channel-icon: #cc2121;
+	--channel-icon: #cc2121 !important;
 
-	--guildbar-avatar-size: 40px;
+	/* --guildbar-avatar-size: 40px; */
 	--custom-guild-list-padding: 16px;
 }
 
@@ -402,17 +481,17 @@ by t
 	--custom-channel-textarea-text-area-height: calc(36px + var(--space-xs));
 }
 
-.friends-table, 
-.messages-wrapper, 
-.chat form, 
-.chat-3bRxxu, 
-.chat-3bRxxu form, 
+.friends-table,
+.messages-wrapper,
+.chat form,
+.chat-3bRxxu,
+.chat-3bRxxu form,
 .content-yTz4x3,
 .messagesWrapper-3lZDfY,
 .guildsWrapper-5TJh6A,
 .typing-2GQL18,
 .container-1UB9sr,
-.container-2Thooq, 
+.container-2Thooq,
 .messagesWrapper-3lZDfY .scroller-wrap ::-webkit-scrollbar-track-piece,
 .guildsAdd-21_IdK,
 .appMount-3VJmYg,
@@ -421,12 +500,12 @@ by t
 .friendsTable-133bsv,
 .activityFeed-28jde9,
 .contentRegion-3nDuYy,
-.scroller-2FKFPG::-webkit-scrollbar-track, 
+.scroller-2FKFPG::-webkit-scrollbar-track,
 .scroller-2FKFPG::-webkit-scrollbar-track-piece,
 .contentRegionScroller-26nc1e,
 .messages-3amgkR,
 .wrapper-1Rf91z,
-.appMount-3lHmkl, 
+.appMount-3lHmkl,
 body,
 .scroller-2TZvBN,
 .friendsTable-133bsv .friendsTableBody-1ZhKif,
@@ -435,13 +514,12 @@ body,
 .scroller-1Bvpku,
 .scroller-3X7KbA,
 .container-2cd8Mz,
-.calendarPicker-sDhzdi .react-datepicker__day--disabled, 
-.calendarPicker-sDhzdi .react-datepicker__day--outside-month, 
-.calendarPicker-sDhzdi .react-datepicker__day.react-datepicker__day--disabled, 
+.calendarPicker-sDhzdi .react-datepicker__day--disabled,
+.calendarPicker-sDhzdi .react-datepicker__day--outside-month,
+.calendarPicker-sDhzdi .react-datepicker__day.react-datepicker__day--disabled,
 .calendarPicker-sDhzdi .react-datepicker__day.react-datepicker__day--disabled:hover,
 .theme-dark .root-g14mjS,
-.theme-light .root-g14mjS
-{
+.theme-light .root-g14mjS {
 	background-color: #121212 !important;
 }
 
@@ -451,8 +529,7 @@ body,
 .panels-j1Uci_,
 .searchResultsWrap-2DKFzt,
 .channelSeparator-1X1FuH .channelName-1QajIf,
-.wrapper-2aW0bm
-{
+.wrapper-2aW0bm {
 	background-color: #161616;
 }
 
@@ -485,19 +562,18 @@ body,
 .scrollableContainer-2NUZem,
 .theme-dark .footer-31IekZ,
 .theme-light .footer-31IekZ,
-.appMount-2yBXZl
-{
-		background-color: #1a1a1a !important;
+.appMount-2yBXZl {
+	background-color: #1a1a1a !important;
 }
 
 .messageGroupBlocked-3wrQQX .messageGroupBlockedBtn-1PBBh-:hover,
-.scroller-wrap .scroller::-webkit-scrollbar-thumb, 
-.thin-1ybCId::-webkit-scrollbar-thumb,
+.scroller-wrap .scroller::-webkit-scrollbar-thumb,
+.thin__99f8c::-webkit-scrollbar-thumb,
 .scroller-wrap .scroller::-webkit-scrollbar-track-piece,
 .auto-Ge5KZx::-webkit-scrollbar-track,
 .auto-2K3UW5::-webkit-scrollbar-track,
 .inner-zqa7da,
-.member-3W1lQa.popout-open .content-OzHfo4, 
+.member-3W1lQa.popout-open .content-OzHfo4,
 .member-3W1lQa.popout-open:hover .content-OzHfo4,
 .member-3W1lQa:hover .content-OzHfo4,
 .messagesPopoutWrap-1MQ1bW,
@@ -516,24 +592,22 @@ body,
 .userPopout-2j1gM4,
 .bodyInnerWrapper-2bQs1k,
 .footer-3naVBw,
-.avatar-2Vndt_
-{
+.avatar-2Vndt_ {
 	background-color: #1f1f1f;
 }
 
-.body-3iLsc4, 
+.body-3iLsc4,
 .footer-1fjuF6,
 .header-ykumBX,
 .messageGroupWrapper-o-Zw7G,
 .search .search-bar,
-.searchAnswer-3Dz2-q, 
+.searchAnswer-3Dz2-q,
 .searchFilter-2ESiM3,
 .menu-Sp6bN1,
-.bodyInner-245q0L, 
+.bodyInner-245q0L,
 .footer-1fjuF6,
 .body-3ND3kc,
-.total-3tKGEB
-{
+.total-3tKGEB {
 	background-color: #232323;
 }
 
@@ -542,87 +616,75 @@ body,
 .uploadModal-2ifh8j,
 .root-1gCeng,
 .lookFilled-yCfaCM.colorGrey-2iAG-B:hover,
-.searchAnswer_b452e7, 
-.searchFilter__118cb
-{
+.searchAnswer_b452e7,
+.searchFilter__118cb {
 	background-color: #292929;
 }
 
 .quickMessage-1yeL4E,
 .search-results-wrap .action-buttons .jump-button,
 .footer-3mqk7D,
-.footer-2gL1pp
-{
+.footer-2gL1pp {
 	background-color: #2f2f2f;
 }
 
 .anchor-3Z-8Bb,
 .embedTitleLink-1Zla9e,
-.mediaBarGrabber-1FqnbN, .mediaBarProgress-1xaPtl, 
-.mediaBarProgress-1xaPtl:after, 
+.mediaBarGrabber-1FqnbN,
+.mediaBarProgress-1xaPtl,
+.mediaBarProgress-1xaPtl:after,
 .mediaBarProgress-1xaPtl:before,
-.divider-3gKybi.dividerRed-MKoLlr>span, 
-.divider-3gKybi.dividerRed-MKoLlr>div, 
-.isMentioned-N-h9aa .mention:hover
-{
+.divider-3gKybi.dividerRed-MKoLlr>span,
+.divider-3gKybi.dividerRed-MKoLlr>div,
+.isMentioned-N-h9aa .mention:hover {
 	color: #c30000 !important;
 }
 
-.dividerRed-MKoLlr .dividerContent-2L12VI:after, 
-.dividerRed-MKoLlr .dividerContent-2L12VI:before 
-{
+.dividerRed-MKoLlr .dividerContent-2L12VI:after,
+.dividerRed-MKoLlr .dividerContent-2L12VI:before {
 	background-color: rgba(158, 0, 0, 0.7);
 }
 
-.mediaBarInteraction-37i2O4:hover .mediaBarGrabber-1FqnbN
-{
+.mediaBarInteraction-37i2O4:hover .mediaBarGrabber-1FqnbN {
 	background-color: transparent;
 }
 
-.theme-dark .root-g14mjS
-{
+.theme-dark .root-g14mjS {
 	background-color: transparent !important;
 	border: 1px solid #651717;
 }
 
 .circleIconButton-jET_ig,
-.childWrapper-anI2G9
-{
+.childWrapper-anI2G9 {
 	background-color: #232323;
 }
 
-.circleIconButton-jET_ig.selected-ugP_am
-{
+.circleIconButton-jET_ig.selected-ugP_am {
 	background-color: #337959;
 }
 
-.mentioned__5126c:before
-{
+.mentioned__5126c:before {
 	background-color: #fa1a1a
 }
 
-.button-1ZiXG9.selected-LCBEAU
-{
+.button-1ZiXG9.selected-LCBEAU {
 	background-color: rgba(80, 80, 80, 0.16)
 }
 
-.message-2qnXI6.selected-2P5D_Z, .mouse-mode .message-2qnXI6:hover
-{
+.message-2qnXI6.selected-2P5D_Z,
+.mouse-mode .message-2qnXI6:hover {
 	background-color: rgba(0, 0, 0, 0.1);
 }
 
-.searchResult-3pzFAB:before
-{
-	background-image: linear-gradient(0deg,#12121200,#161616) !important;
+.searchResult-3pzFAB:before {
+	background-image: linear-gradient(0deg, #12121200, #161616) !important;
 }
 
-.searchResult-3pzFAB:after
-{
-	background-image: linear-gradient(180deg,#12121200,#161616) !important;
+.searchResult-3pzFAB:after {
+	background-image: linear-gradient(180deg, #12121200, #161616) !important;
 }
 
-.searchResult-3pzFAB .searchResultMessage-2VxO12.hit-NLlWXA 
-{
+.searchResult-3pzFAB .searchResultMessage-2VxO12.hit-NLlWXA {
 	border: 2px solid #1f1f1f;
 }
 
@@ -639,87 +701,74 @@ body,
 
 .platform-win .sidebar-2K8pFh,
 .sidebar-2K8pFh,
-.layer-3QrUeG.baseLayer-35bLyl
-{
+.layer-3QrUeG.baseLayer-35bLyl {
 	border-color: #1a1a1a;
 	background-color: #121212;
 }
 
-.children-19S4PO:after
-{
-	background: linear-gradient(90deg,transparent 0,#1a1a1a);
+.children-19S4PO:after {
+	background: linear-gradient(90deg, transparent 0, #1a1a1a);
 }
 
 .search-results-wrap .search-result:before,
-.search-results-wrap .search-result:after 
-{
+.search-results-wrap .search-result:after {
 	Background-image: none
 }
 
 .search-results-wrap .search-result .search-result-message.hit,
 .search-results-wrap .search-header,
-.search-results-wrap .search-result.expanded 
-{
+.search-results-wrap .search-result.expanded {
 	border: 2px solid rgba(40, 40, 40, 0.6);
 }
 
-.messageGroupWrapper-o-Zw7G 
-{
+.messageGroupWrapper-o-Zw7G {
 	Border-color: rgba(40, 40, 40, 0.6)
 }
 
-.headerPlaying-j0WQBV
-{
+.headerPlaying-j0WQBV {
 	Background-color: #920f0f;
 }
 
-.headerStreaming-2FjmGz
-{
+.headerStreaming-2FjmGz {
 	background: #593695;
 }
 
-.activity-11LB_k 
-{
+.activity-11LB_k {
 	Background-color: rgba(0, 0, 0, 0.1);
 }
 
 /*blocked messages border*/
 .messageGroupBlocked-3wrQQX,
-.messageGroupBlocked-3wrQQX.revealed-1_RKsf
-{
+.messageGroupBlocked-3wrQQX.revealed-1_RKsf {
 	Border-color: #1a1a1a;
 }
 
 /*voice chat box*/
-.container-2Thooq
-{
+.container-2Thooq {
 	border-bottom: 3px solid #1a1a1a;
 	border-left: 3px solid #1a1a1a;
 	border-right: 3px solid #1a1a1a;
 }
 
-.total-3tKGEB:after 
-{
+.total-3tKGEB:after {
 	border-right-color: #232323;
 }
 
 /*box with profile picture below voice chat box*/
-.container-1UB9sr
-{
+.container-1UB9sr {
 	border-bottom: 3px solid #1a1a1a;
 	border-left: 3px solid #1a1a1a;
 	border-right: 3px solid #1a1a1a;
 	border-top: 3px solid #1a1a1a;
 }
 
-div.channel.channel-voice.audio
-{
+div.channel.channel-voice.audio {
 	background-color: #1c1c1c;
 	border-right: 3px solid #7f1212;
 	border-radius: 3px;
 }
 
-.imageWrapper__178ee > img {
+.imageWrapper__178ee>img {
 	float: left;
 }
 
@@ -732,7 +781,8 @@ div.channel.channel-voice.audio
 .imageWrapper_af017a,
 .imageContainer_cf58b5,
 .thin__99f8c::-webkit-scrollbar-track,
-.messagesWrapper__36d07 .auto_d125d2::-webkit-scrollbar-thumb, 
+.thin__99f8c::-webkit-scrollbar-thumb,
+.messagesWrapper__36d07 .auto_d125d2::-webkit-scrollbar-thumb,
 .messagesWrapper__36d07 .auto_d125d2::-webkit-scrollbar-track,
 
 .embedMedia__623de,
@@ -747,19 +797,16 @@ div.channel.channel-voice.audio
 .oneByOneGrid_f4758a,
 .mediaAttachmentsContainer__242e2,
 .visualMediaItemContainer_f4758a,
-.mosaicItemMediaMosaic__6c706
-{
+.mosaicItemMediaMosaic__6c706 {
 	border: 0px;
 	border-radius: 0px;
 }
 
-.inlineMediaEmbed_b25e49 .imageWrapper__178ee
-{
+.inlineMediaEmbed_b25e49 .imageWrapper__178ee {
 	border-radius: 2px !important;
 }
 
-.messagesWrapper__36d07 .auto_d125d2::-webkit-scrollbar-thumb
-{
+.messagesWrapper__36d07 .auto_d125d2::-webkit-scrollbar-thumb {
 	background-color: #161616 !important;
 }
 
@@ -767,15 +814,13 @@ div.channel.channel-voice.audio
 	background-color: var(--modal-footer-background);
 }
 
-.divider-3gKybi:before, 
-.divider-3gKybi span 
-{
-	background-color: rgba(0,0,0,0);
+.divider-3gKybi:before,
+.divider-3gKybi span {
+	background-color: rgba(0, 0, 0, 0);
 }
 
-.modeSelected-1zApJ_ .content-3at_AU, 
-.modeSelected-1zApJ_:hover .content-3at_AU
-{
+.modeSelected-1zApJ_ .content-3at_AU,
+.modeSelected-1zApJ_:hover .content-3at_AU {
 	background-color: #7f1212;
 }
 
@@ -788,62 +833,52 @@ div.channel.channel-voice.audio
 }
 
 .wrapper__2ea32.modeSelected__2ea32 .icon__2ea32,
-.wrapper__2ea32.modeSelected__2ea32:hover .icon__2ea32
-{
+.wrapper__2ea32.modeSelected__2ea32:hover .icon__2ea32 {
 	color: #451919;
 }
 
-.modeMuted__2ea32 .icon__2ea32
-{
+.modeMuted__2ea32 .icon__2ea32 {
 	color: #6a2323;
 }
 
 .wrapper__2ea32.modeUnreadImportant__2ea32 .icon__2ea32,
-.wrapper__2ea32.modeUnreadImportant__2ea32:hover .icon__2ea32
-{
+.wrapper__2ea32.modeUnreadImportant__2ea32:hover .icon__2ea32 {
 	color: #cc2121;
 }
 
 .divider-3gKybi.dividerRed-MKoLlr>span,
 .divider-3gKybi.dividerRed-MKoLlr>div,
 .isMentioned-N-h9aa .mention:hover,
-.markup-eYLPri a
-{
+.markup-eYLPri a {
 	color: #ff0000;
 }
 
-.newMessagesBar-265mhP:hover
-{
+.newMessagesBar-265mhP:hover {
 	background-color: rgba(224, 5, 3, .8);
 	animation: none;
 }
 
-.newMessagesBar-265mhP
-{
+.newMessagesBar-265mhP {
 	cursor: none;
 	background-color: rgba(194, 5, 3, .8);
 	animation: unread 2s ease-in-out infinite;
 }
 
-.jumpToPresentBar-G1R9s6
-{
-	background-color: rgba(128,128,128,0.5);
+.jumpToPresentBar-G1R9s6 {
+	background-color: rgba(128, 128, 128, 0.5);
 }
 
-.membersGroup-v9BXpm 
-{
+.membersGroup-v9BXpm {
 	color: #cfcfcf;
 }
 
 .avatarSpeaking_c95053,
-.avatarSpeaking_d80634
-{
+.avatarSpeaking_d80634 {
 	box-shadow: 0 0 0 3px #ca1c1c, inset 0 0 0 0px #ca1c1c;
 	animation: speaking 2s ease-in-out infinite;
 }
 
-.avatarSpeaking__61fb1
-{
+.avatarSpeaking__61fb1 {
 	box-shadow: inset 0 0 0 3px #ff0000, inset 0 0 0 4px var(--background-secondary);
 	animation: speaking2 2s ease-in-out infinite;
 }
@@ -937,13 +972,12 @@ div.channel.channel-voice.audio
 	font-weight: bold;
 }*/
 
-.unread__2ea32
-{
-	background-color: hsla(0,0%,0%,0);
+.unread__2ea32 {
+	background-color: hsla(0, 0%, 0%, 0);
 }
 
 .mediaAttachmentsContainer_edba75,
-.mediaAttachmentsContainer_edba75 > div,
+.mediaAttachmentsContainer_edba75>div,
 .messageAttachmentMediaMosaic__65bfc,
 .imageWrapper_fd6587,
 .video__4c052,
@@ -955,8 +989,7 @@ div.channel.channel-voice.audio
 .embedThumbnail__468e1 img,
 .embedThumbnail__468e1 video,
 .embedVideo__0c65b img,
-.embedVideo__0c65b video
-{
+.embedVideo__0c65b video {
 	border-radius: 2px !important;
 }
 
@@ -970,119 +1003,101 @@ div.channel.channel-voice.audio
 }*/
 
 .guild-1EfMGQ.selected-ML3OIq:before,
-.mentioned-Tre-dv:before
-{
+.mentioned-Tre-dv:before {
 	background-color: #ff0000 !important;
 	animation: none !important;
 }
 
-.message-2CShn3.mentioned-Tre-dv.selected-2LX7Jy, 
-.mouse-mode.full-motion .mentioned-Tre-dv:hover
-{
+.message-2CShn3.mentioned-Tre-dv.selected-2LX7Jy,
+.mouse-mode.full-motion .mentioned-Tre-dv:hover {
 	background-color: var(--background-mentioned-hover) !important;
 }
 
-.item__58105
-{
+.item__58105 {
 	background-color: var(--red-500);
 	width: 9px;
 	border-radius: 0 5px 5px 0;
 }
 
-.isMentioned-N-h9aa 
-{
-	background: rgba(230,39,39,0.2);
+.isMentioned-N-h9aa {
+	background: rgba(230, 39, 39, 0.2);
 }
 
-.isMentionedCozy-3isp7y:after
-{
+.isMentionedCozy-3isp7y:after {
 	border-left: 1px solid #cece17;
 }
 
-.highlighted__5126c, .replying__5126c
-{
+.highlighted__5126c,
+.replying__5126c {
 	box-shadow: inset 0px 0px 0px 1px #651717;
-	background-color: rgba(80,39,39,0.2);
+	background-color: rgba(80, 39, 39, 0.2);
 }
 
-.highlighted__5126c:hover, .replying__5126c:hover
-{
-	background-color: rgba(60,39,39,0.2) !important;
+.highlighted__5126c:hover,
+.replying__5126c:hover {
+	background-color: rgba(60, 39, 39, 0.2) !important;
 }
 
 .theme-dark .wrapperHover-1GktnT:hover,
-.theme-light .wrapperHover-1GktnT:hover 
-{
-	background-color: rgb(148,22,22);
+.theme-light .wrapperHover-1GktnT:hover {
+	background-color: rgb(148, 22, 22);
 }
 
-.newMessagesBar-mujexs button:last-child 
-{
+.newMessagesBar-mujexs button:last-child {
 	color: #c8c8c8;
 }
 
-.hasMore-3e72_v button
-{
+.hasMore-3e72_v button {
 	background-color: #1a1a1a;
 	border: 1px solid #1a1a1a;
 	color: #a21717;
 }
 
-.visual-refresh .reaction__23977
-{
+.visual-refresh .reaction__23977 {
 	border: 1px solid #202020;
 	border-radius: 0.25rem;
 	background: #202020;
 }
 
-.visual-refresh .reaction__23977:hover
-{
-	border-color: rgba(80, 80, 80,0.6);
+.visual-refresh .reaction__23977:hover {
+	border-color: rgba(80, 80, 80, 0.6);
 	box-shadow: inset 0 0 0 3px rgba(80, 80, 80, 0.1), inset 0 0 0 2px rgba(80, 80, 80, 0.2), inset 0 0 0 1px rgba(80, 80, 80, 0.2);
 	background: #282828;
 }
 
-.visual-refresh .reaction__23977.reactionMe__23977
-{
-	border-color: rgba(255,0,0,0.7);
+.visual-refresh .reaction__23977.reactionMe__23977 {
+	border-color: rgba(255, 0, 0, 0.7);
 	background-color: rgba(66, 66, 66, 0.3);
 	box-shadow: inset 0 0 0 3px rgba(255, 0, 0, 0.1), inset 0 0 0 2px rgba(255, 0, 0, 0.2), inset 0 0 0 1px rgba(255, 0, 0, 0.3);
 }
 
-.visual-refresh .reactionInner__23977
-{
+.visual-refresh .reactionInner__23977 {
 	padding-top: 2px;
 	padding-bottom: 2px;
 }
 
 .visual-refresh .reaction__23977.reactionMe__23977 .reactionCount__23977,
-.visual-refresh .reaction__23977.reactionMe__23977:hover .reactionCount__23977
-{
+.visual-refresh .reaction__23977.reactionMe__23977:hover .reactionCount__23977 {
 	color: #ddd !important;
 }
 
-.friendsTable-133bsv 
-{
+.friendsTable-133bsv {
 	margin-top: 0px;
 }
 
-.wordmarkWindows-1v0lYD
-{
+.wordmarkWindows-1v0lYD {
 	color: #909090;
 }
 
-.circleIconButton-1QV--U
-{
+.circleIconButton-1QV--U {
 	background-color: var(--background-tertiary);
 }
 
-.scroller-1Bvpku
-{
+.scroller-1Bvpku {
 	background-color: var(--background-primary);
 }
 
-.rolePill-2IJ1vo 
-{
+.rolePill-2IJ1vo {
 	background-color: #212121;
 	border: 1px solid;
 	border-color: #ffffff33;
@@ -1090,64 +1105,54 @@ div.channel.channel-voice.audio
 
 .rtcConnectionQualityFine-2J6i8z .pingForeground-2uAOZ3,
 .rtcConnectionStatusConnected-VRZDjy,
-.rtcConnectionQualityBad-1J7mUU .pingForeground-2uAOZ3:first-child
-{
+.rtcConnectionQualityBad-1J7mUU .pingForeground-2uAOZ3:first-child {
 	color: #e62e2e;
 }
 
-#app-mount > div.app-1q1i1E > div > div.layers-3iHuyZ.layers-3q14ss > div > div > nav > ul > div.scroller-1Bvpku.none-2Eo-qx.scrollerBase-289Jih > div:nth-child(3) > div.wrapper-3Njo_c > div > div:nth-child(2) > div > svg > foreignObject > div > div
-{
+#app-mount>div.app-1q1i1E>div>div.layers-3iHuyZ.layers-3q14ss>div>div>nav>ul>div.scroller-1Bvpku.none-2Eo-qx.scrollerBase-289Jih>div:nth-child(3)>div.wrapper-3Njo_c>div>div:nth-child(2)>div>svg>foreignObject>div>div {
 	background-color: rgba(80, 80, 80, 0.4) !important;
 }
 
-.avatar-2Vndt_
-{
+.avatar-2Vndt_ {
 	border-color: #232323;
 }
 
-.option-2KkUJO:after
-{
-	background: linear-gradient(90deg,rgba(35,35,35,0),#1f1f1f 80%) !important;
+.option-2KkUJO:after {
+	background: linear-gradient(90deg, rgba(35, 35, 35, 0), #1f1f1f 80%) !important;
 }
 
-.searchAnswer-23w-CH, 
-.searchFilter-2UfsDk
-{
+.searchAnswer-23w-CH,
+.searchFilter-2UfsDk {
 	background-color: #292929 !important;
 }
 
 .queryContainer-ZunrLZ,
-.option-2KkUJO[aria-selected=true]
-{
+.option-2KkUJO[aria-selected=true] {
 	background-color: #1b1b1b !important;
 }
 
-.queryContainer-ZunrLZ
-{
+.queryContainer-ZunrLZ {
 	color: #bbbbbb !important;
 	border-bottom-color: #1b1b1b !important;
 }
 
-.message-2CShn3.selected-2LX7Jy, 
-.mouse-mode.full-motion .message-2CShn3:hover
-{
-	background-color: rgba(4,4,4,0.12);
+.message-2CShn3.selected-2LX7Jy,
+.mouse-mode.full-motion .message-2CShn3:hover {
+	background-color: rgba(4, 4, 4, 0.12);
 }
 
 .__web-inspector-hide-shortcut__,
-.toolbar-3_r2xA > .anchor-1X4H4q
-{
+.toolbar-3_r2xA>.anchor-1X4H4q {
 	visibility: hidden !important;
 }
 
-.embedVideoImageComponent-3Clc3C div
-{
+.embedVideoImageComponent-3Clc3C div {
 	width: 100% !important;
 	height: 100% !important;
 }
 
-.message__5126c.mentioned__5126c.selected_fd9051, .mouse-mode.full-motion .mentioned__5126c:hover
-{
+.message__5126c.mentioned__5126c.selected_fd9051,
+.mouse-mode.full-motion .mentioned__5126c:hover {
 	background-color: var(--background-mentioned-hover) !important;
 }
 
@@ -1159,7 +1164,7 @@ div.channel.channel-voice.audio
 }
 
 .blobContainer_e5445c,
-.tutorialContainer__1f388 > .listItem__650eb {
+.tutorialContainer__1f388>.listItem__650eb {
 	transform: scale(1.2) !important;
 }
 
@@ -1217,7 +1222,8 @@ div.channel.channel-voice.audio
 	margin: 4px;
 }
 
-.sprite__04eed, .spriteContainer__04eed,
+.sprite__04eed,
+.spriteContainer__04eed,
 .attachButtonInner__0923f {
 	transform: scale(1.2);
 }
@@ -1226,10 +1232,10 @@ div.channel.channel-voice.audio
 	border: 1px solid var(--app-border-frame);
 }
 
-.highlighted__5126c, .replying__5126c
-{
+.highlighted__5126c,
+.replying__5126c {
 	box-shadow: inset 0px 0px 0px 1px #651717;
-	background-color: rgba(80,39,39,0.2);
+	background-color: rgba(80, 39, 39, 0.2);
 }
 
 .scrollerContent__36d07 {
