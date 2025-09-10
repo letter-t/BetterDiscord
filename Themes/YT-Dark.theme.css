@@ -519,7 +519,10 @@ body,
 .calendarPicker-sDhzdi .react-datepicker__day.react-datepicker__day--disabled,
 .calendarPicker-sDhzdi .react-datepicker__day.react-datepicker__day--disabled:hover,
 .theme-dark .root-g14mjS,
-.theme-light .root-g14mjS {
+.theme-light .root-g14mjS,
+.wrapper_ef3116,
+.platform-win .bar_c38106,
+.sidebar_c48ade {
 	background-color: #121212 !important;
 }
 
@@ -529,7 +532,9 @@ body,
 .panels-j1Uci_,
 .searchResultsWrap-2DKFzt,
 .channelSeparator-1X1FuH .channelName-1QajIf,
-.wrapper-2aW0bm {
+.wrapper-2aW0bm,
+.container__2637a,
+.theme-dark .themed__9293f {
 	background-color: #161616;
 }
 
@@ -634,8 +639,8 @@ body,
 .mediaBarProgress-1xaPtl,
 .mediaBarProgress-1xaPtl:after,
 .mediaBarProgress-1xaPtl:before,
-.divider-3gKybi.dividerRed-MKoLlr>span,
-.divider-3gKybi.dividerRed-MKoLlr>div,
+.divider-3gKybi.dividerRed-MKoLlr > span,
+.divider-3gKybi.dividerRed-MKoLlr > div,
 .isMentioned-N-h9aa .mention:hover {
 	color: #c30000 !important;
 }
@@ -768,7 +773,7 @@ div.channel.channel-voice.audio {
 	border-radius: 3px;
 }
 
-.imageWrapper__178ee>img {
+.imageWrapper__178ee > img {
 	float: left;
 }
 
@@ -776,8 +781,8 @@ div.channel.channel-voice.audio {
 	border: 1px solid #651717;
 }
 
-.video_f72aac,
-.wrapper_f72aac,
+.video_cf09d8,
+.wrapper_cf09d8,
 .imageWrapper_af017a,
 .imageContainer_cf58b5,
 .thin__99f8c::-webkit-scrollbar-track,
@@ -797,7 +802,8 @@ div.channel.channel-voice.audio {
 .oneByOneGrid_f4758a,
 .mediaAttachmentsContainer__242e2,
 .visualMediaItemContainer_f4758a,
-.mosaicItemMediaMosaic__6c706 {
+.mosaicItemMediaMosaic__6c706,
+.spoilerContainer__54ab5.attachmentContainer__54ab5 {
 	border: 0px;
 	border-radius: 0px;
 }
@@ -846,8 +852,8 @@ div.channel.channel-voice.audio {
 	color: #cc2121;
 }
 
-.divider-3gKybi.dividerRed-MKoLlr>span,
-.divider-3gKybi.dividerRed-MKoLlr>div,
+.divider-3gKybi.dividerRed-MKoLlr > span,
+.divider-3gKybi.dividerRed-MKoLlr > div,
 .isMentioned-N-h9aa .mention:hover,
 .markup-eYLPri a {
 	color: #ff0000;
@@ -977,7 +983,7 @@ div.channel.channel-voice.audio {
 }
 
 .mediaAttachmentsContainer_edba75,
-.mediaAttachmentsContainer_edba75>div,
+.mediaAttachmentsContainer_edba75 > div,
 .messageAttachmentMediaMosaic__65bfc,
 .imageWrapper_fd6587,
 .video__4c052,
@@ -1109,7 +1115,7 @@ div.channel.channel-voice.audio {
 	color: #e62e2e;
 }
 
-#app-mount>div.app-1q1i1E>div>div.layers-3iHuyZ.layers-3q14ss>div>div>nav>ul>div.scroller-1Bvpku.none-2Eo-qx.scrollerBase-289Jih>div:nth-child(3)>div.wrapper-3Njo_c>div>div:nth-child(2)>div>svg>foreignObject>div>div {
+#app-mount > div.app-1q1i1E > div > div.layers-3iHuyZ.layers-3q14ss > div > div > nav > ul > div.scroller-1Bvpku.none-2Eo-qx.scrollerBase-289Jih > div:nth-child(3) > div.wrapper-3Njo_c > div > div:nth-child(2) > div > svg > foreignObject > div > div {
 	background-color: rgba(80, 80, 80, 0.4) !important;
 }
 
@@ -1142,7 +1148,7 @@ div.channel.channel-voice.audio {
 }
 
 .__web-inspector-hide-shortcut__,
-.toolbar-3_r2xA>.anchor-1X4H4q {
+.toolbar-3_r2xA > .anchor-1X4H4q {
 	visibility: hidden !important;
 }
 
@@ -1164,7 +1170,7 @@ div.channel.channel-voice.audio {
 }
 
 .blobContainer_e5445c,
-.tutorialContainer__1f388>.listItem__650eb {
+.tutorialContainer__1f388 > .listItem__650eb {
 	transform: scale(1.2) !important;
 }
 
@@ -1240,4 +1246,45 @@ div.channel.channel-voice.audio {
 
 .scrollerContent__36d07 {
 	margin-bottom: 8px;
+}
+
+.visual-refresh .attachButton__0923f {
+	padding: 6px;
+	margin-right: 0px;
+}
+
+.align-chat-input .attachWrapper__0923f {
+	padding: 0px;
+}
+
+.align-chat-input .scrollerSpacer__36d07 {
+	height: 32px;
+}
+
+.align-chat-input .button__24af7:not(.noHover__24af7):hover {
+	background-color: #0000;
+}
+
+.chatTypingGradientNotAtBottom__36d07 {
+	background-color: var(--background-base-lower);
+	height: 40px;
+}
+
+.align-chat-input .cooldownWrapper_b21699 {
+	background-color: var(--background-surface-higher);
+	padding: 4px 8px 4px 4px;
+	margin-right: 16px;
+	border-radius: 4px 4px 0px 0px;
+	border-top: 1px solid var(--button-secondary-background);
+	border-left: 1px solid var(--button-secondary-background);
+	border-right: 1px solid var(--button-secondary-background);
+}
+
+.align-chat-input .inTextChannel_b88801 .text_b88801 {
+	margin-left: var(--space-8);
+}
+
+.chatTypingGradientAtBottom__36d07 {
+	background: var(--background-base-lower);
+	height: 32px;
 }
