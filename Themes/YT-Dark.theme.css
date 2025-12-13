@@ -144,7 +144,6 @@ by t
 	--background-modifier-active: rgba(80, 80, 80, 0.24);
 	--background-modifier-selected: rgba(80, 80, 80, 0.32);
 	--background-modifier-accent: hsla(0, 0%, 100%, 0.06);
-	--background-message-hover: rgba(4, 4, 4, 0.12);
 	--scrollbar-thin-thumb: #212121;
 	--scrollbar-auto-thumb: #2f2f2f;
 	--scrollbar-auto-track: #212121;
@@ -168,8 +167,13 @@ by t
 	--deprecated-text-input-border-hover: #040404;
 	--deprecated-text-input-border-disabled: #161616;
 	--deprecated-text-input-prefix: #dcddde;
-	--background-mentioned: rgba(230, 39, 39, 0.2);
-	--background-mentioned-hover: rgba(160, 39, 39, 0.2);
+	--message-background-hover: rgba(0, 0, 0, 0.12);
+	/* --message-highlight-background-default:  color-mix(in oklab, hsl(var(--opacity-blurple-16-hsl) / 0.1607843137254902) 100%, hsl(var(--custom-theme-base-color-hsl, 0 0% 0%) / 0.1607843137254902) var(--custom-theme-base-color-amount, 0%)); */
+    /* --message-highlight-background-hover:  color-mix(in oklab, hsl(var(--opacity-blurple-12-hsl) / 0.12156862745098039) 100%, hsl(var(--custom-theme-base-color-hsl, 0 0% 0%) / 0.12156862745098039) var(--custom-theme-base-color-amount, 0%)); */
+	--opacity-blurple-16-hsl: 0 calc(var(--saturation-factor, 1) * 85.556%) 64.706%;
+	--opacity-blurple-12-hsl: 0 calc(var(--saturation-factor, 1) * 85.556%) 64.706%;
+	--message-mentioned-background-default: rgba(230, 39, 39, 0.2);
+	--message-mentioned-background-hover: rgba(160, 39, 39, 0.2);
 	--brand-experiment-05a: rgba(230, 39, 39, 0.2);
 	--brand-experiment-10a: rgba(160, 39, 39, 0.2);
 	--brand-experiment: var(--red-500) !important;
@@ -1014,10 +1018,10 @@ div.channel.channel-voice.audio {
 	animation: none !important;
 }
 
-.message-2CShn3.mentioned-Tre-dv.selected-2LX7Jy,
+/* .message-2CShn3.mentioned-Tre-dv.selected-2LX7Jy,
 .mouse-mode.full-motion .mentioned-Tre-dv:hover {
-	background-color: var(--background-mentioned-hover) !important;
-}
+	background-color: var(--message-mentioned-background-hover) !important;
+} */
 
 .item__58105 {
 	background-color: var(--red-500);
@@ -1159,7 +1163,7 @@ div.channel.channel-voice.audio {
 
 .message__5126c.mentioned__5126c.selected_fd9051,
 .mouse-mode.full-motion .mentioned__5126c:hover {
-	background-color: var(--background-mentioned-hover) !important;
+	background-color: var(--message-mentioned-background-hover) !important;
 }
 
 
@@ -1196,7 +1200,7 @@ div.channel.channel-voice.audio {
 	border-radius: var(--radius-xs);
 }
 
-.visual-refresh .panels_c48ade {
+.visual-refresh .panels__5e434 {
 	left: calc(var(--custom-guild-list-width));
 	bottom: 0px;
 	width: calc(100% - var(--custom-guild-list-width));
