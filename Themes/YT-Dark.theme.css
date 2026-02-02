@@ -102,7 +102,7 @@ by t
 	--header-primary: #fff;
 	--header-secondary: #bbbbbb;
 	--text-normal: #dcddde;
-	--text-muted: #7b7b7b;
+	--text-muted: #5e5e5e;
 	--text-link: #f40000 !important;
 	--channels-default: #929292;
 	--interactive-normal: #bbbbbb;
@@ -858,6 +858,7 @@ div.channel.channel-voice.audio {
 }
 
 .modeMuted__2ea32 .name__2ea32 {
+	color: var(--interactive-muted);
 	opacity: 1;
 }
 
